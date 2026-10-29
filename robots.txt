@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://manitharunreddy.github.io/seo-learning-portal/sitemap.xml
