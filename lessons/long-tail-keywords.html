@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Learn what long-tail keywords are, why they matter for SEO, and how to find specific search phrases with practical examples."
+    />
+
+    <title>Long-Tail Keywords | SEO Zero to Hero</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- Shared website navigation. -->
+    <header>
+      <a href="../index.html">SEO Zero to Hero</a>
+
+      <nav aria-label="Main navigation">
+        <a href="../index.html#lessons">Lessons</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+    </header>
+
+    <!-- Main lesson content. -->
+    <main>
+      <article id="lesson-content">
+        <p>LESSON 07</p>
+
+        <h1>What Are Long-Tail Keywords?</h1>
+
+        <p>
+          Long-tail keywords are specific search phrases that often contain
+          several words. They usually describe a more specific need than broad
+          keywords.
+        </p>
+
+        <h2>1. Short Keywords vs Long-Tail Keywords</h2>
+
+        <p>Compare these examples:</p>
+
+        <ul>
+          <li><strong>Broad keyword:</strong> Software</li>
+          <li><strong>More specific:</strong> Billing software</li>
+          <li>
+            <strong>Long-tail keyword:</strong> Billing software for petrol
+            bunks in India
+          </li>
+        </ul>
+
+        <p>
+          The longer phrase gives us more information about what the searcher
+          may need.
+        </p>
+
+        <h2>2. Why Are Long-Tail Keywords Important?</h2>
+
+        <ul>
+          <li>They can help you target a specific audience.</li>
+          <li>They can reveal a clearer search intent.</li>
+          <li>Some have less competition than broad keywords.</li>
+          <li>They help you plan focused and useful content.</li>
+        </ul>
+
+        <p>
+          Remember: Long-tail keywords do not always have low competition or
+          high conversion rates. Research each keyword before targeting it.
+        </p>
+
+        <h2>3. How to Find Long-Tail Keywords</h2>
+
+        <ol>
+          <li>Start with a broad topic related to your website.</li>
+          <li>Check Google's autocomplete suggestions.</li>
+          <li>Explore related searches and common questions.</li>
+          <li>Review questions your customers frequently ask.</li>
+          <li>Use keyword research tools to evaluate your ideas.</li>
+        </ol>
+
+        <h2>4. Real-Time Example</h2>
+
+        <p>
+          Imagine you develop petrol bunk management software. Instead of
+          targeting only "software", consider these more specific keyword ideas:
+        </p>
+
+        <ul>
+          <li>Petrol bunk billing software for small businesses</li>
+          <li>Fuel station inventory management software</li>
+          <li>Petrol pump daily sales reporting software</li>
+          <li>How to manage fuel station stock digitally</li>
+        </ul>
+
+        <p>
+          These are example keyword ideas, not verified search-volume figures.
+          Check actual search results and keyword data before choosing your
+          targets.
+        </p>
+
+        <h2>5. Where Should You Use Long-Tail Keywords?</h2>
+
+        <p>Use relevant phrases naturally in:</p>
+
+        <ul>
+          <li>Page titles and headings.</li>
+          <li>Helpful page content.</li>
+          <li>Descriptive URLs, where appropriate.</li>
+          <li>Internal links when they accurately describe the destination.</li>
+        </ul>
+
+        <p>
+          Avoid repeating keywords unnaturally. Your content should help people
+          first, rather than being written just to repeat search phrases.
+        </p>
+
+        <h2>Key Takeaway</h2>
+
+        <p>
+          Long-tail keywords help you understand and address specific search
+          needs. Choose phrases relevant to your audience and create content
+          that answers their questions.
+        </p>
+
+        <!-- Marks this lesson as completed. -->
+        <button id="complete-lesson" type="button">Mark as Completed</button>
+
+        <!-- Navigation between course lessons. -->
+        <nav class="lesson-navigation" aria-label="Lesson navigation">
+          <a href="search-intent.html"> &larr; Previous Lesson </a>
+
+          <a href="../index.html#lessons">All Lessons</a>
+
+          <a href="keyword-mapping.html"> Next Lesson &rarr; </a>
+        </nav>
+      </article>
+    </main>
+
+    <!-- Shared website footer. -->
+    <footer>
+      <p>Learn SEO. Practise SEO. Grow your skills.</p>
+    </footer>
+
+    <!-- Loads lesson progress functions. -->
+    <script src="../js/progress.js"></script>
+
+    <script>
+      const completeButton = document.getElementById("complete-lesson");
+      const lessonId = "long-tail-keywords";
+
+      // Restores the saved completion state.
+      if (isLessonCompleted(lessonId)) {
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      }
+
+      // Saves progress when the lesson is completed.
+      completeButton.addEventListener("click", function () {
+        markLessonCompleted(lessonId);
+
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      });
+    </script>
+  </body>
+</html>

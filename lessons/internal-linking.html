@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Learn internal linking in SEO, anchor text, website structure, and how to connect related pages to improve navigation and search engine discovery."
+    />
+
+    <title>Internal Linking | SEO Zero to Hero</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="../index.html">SEO Zero to Hero</a>
+
+      <nav aria-label="Main navigation">
+        <a href="../index.html#lessons">Lessons</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <article id="lesson-content">
+        <p>LESSON 12</p>
+
+        <h1>Internal Linking</h1>
+
+        <p>
+          Internal linking is an important part of SEO. It helps search engines
+          discover pages on your website and helps visitors navigate between
+          related topics.
+        </p>
+
+        <p>
+          In this lesson, we'll learn how internal links work, why they matter,
+          and how to implement them correctly in your website.
+        </p>
+
+        <h2>1. What Is Internal Linking?</h2>
+
+        <p>
+          An internal link connects one page of your website to another page on
+          the same website.
+        </p>
+
+        <p>
+          For example, your SEO learning website contains separate lessons about
+          SEO basics and keyword research. You can connect these lessons using
+          internal links.
+        </p>
+
+        <p><strong>Example:</strong></p>
+
+        <pre><code>&lt;a href="keyword-research.html"&gt;Learn Keyword Research&lt;/a&gt;</code></pre>
+
+        <p>
+          This link connects the current lesson to the Keyword Research lesson
+          because both files are inside the same <code>lessons</code>
+          folder.
+        </p>
+
+        <p>
+          <strong>Remember:</strong> The link above is an HTML example. You
+          should use it on a page where <code>keyword-research.html</code> is
+          the correct relative path.
+        </p>
+
+        <h2>2. Why Are Internal Links Important?</h2>
+
+        <ul>
+          <li>
+            <strong>Page discovery:</strong>
+            Search engines can discover other pages by following links.
+          </li>
+
+          <li>
+            <strong>Navigation:</strong>
+            Visitors can move between related pages without returning to the
+            homepage every time.
+          </li>
+
+          <li>
+            <strong>Context:</strong>
+            Links help search engines understand how different pages relate to
+            one another.
+          </li>
+
+          <li>
+            <strong>Link equity:</strong>
+            Internal links can help distribute ranking signals across relevant
+            pages on your website.
+          </li>
+
+          <li>
+            <strong>User experience:</strong>
+            Visitors can discover additional information related to the topic
+            they're reading.
+          </li>
+        </ul>
+
+        <h2>3. How Do Internal Links Work?</h2>
+
+        <p>Imagine your website has this structure:</p>
+
+        <pre><code>SEO Zero to Hero
+        |
+        |---- What Is SEO?
+        |
+        |---- Keyword Research
+        |        |
+        |        |---- Search Intent
+        |        |
+        |        |---- Long-Tail Keywords
+        |
+        |---- SEO-Friendly URLs
+        |
+        |---- Internal Linking</code></pre>
+
+        <p>
+          Each lesson covers a different topic. When relevant links connect
+          these lessons, visitors can easily move from one topic to another.
+        </p>
+
+        <p>
+          Search engines can also follow these links to discover pages and
+          understand their relationships.
+        </p>
+
+        <p>
+          Important pages should be reachable through useful links rather than
+          being left without any internal links pointing to them.
+        </p>
+
+        <h2>4. What Is Anchor Text?</h2>
+
+        <p>Anchor text is the visible, clickable text inside a hyperlink.</p>
+
+        <p><strong>Example:</strong></p>
+
+        <pre><code>&lt;a href="what-is-seo.html"&gt;Learn SEO Basics&lt;/a&gt;</code></pre>
+
+        <p>
+          In this example, <strong>Learn SEO Basics</strong> is the anchor text,
+          and <code>what-is-seo.html</code> is the destination.
+        </p>
+
+        <p>
+          Because both files are in the same folder, this relative path is
+          suitable when the link is placed inside another lesson in that folder.
+        </p>
+
+        <p>
+          Good anchor text describes the destination clearly. Avoid vague
+          phrases such as "click here" when a more descriptive phrase would help
+          visitors understand the link.
+        </p>
+
+        <h2>5. Best Practices for Internal Linking</h2>
+
+        <ul>
+          <li>Link to pages that are relevant to the current content.</li>
+
+          <li>Use descriptive and natural anchor text.</li>
+
+          <li>
+            Make important pages easy to discover through navigation and
+            contextual links.
+          </li>
+
+          <li>Connect related lessons so visitors can continue learning.</li>
+
+          <li>
+            Check internal links regularly to identify broken destinations.
+          </li>
+
+          <li>Maintain a logical website structure.</li>
+
+          <li>Update internal links when you rename or move a page.</li>
+
+          <li>Avoid adding links that do not provide value to the reader.</li>
+        </ul>
+
+        <h2>6. Bad vs Good Internal Linking</h2>
+
+        <h3>Bad Example</h3>
+
+        <p>
+          Read our article about SEO.
+          <a href="what-is-seo.html">Click here</a>.
+        </p>
+
+        <p>
+          The link works, but "Click here" does not clearly describe the
+          destination.
+        </p>
+
+        <h3>Better Example</h3>
+
+        <p>
+          Start with our
+          <a href="what-is-seo.html">What Is SEO? lesson</a>
+          to understand the fundamentals of search engine optimization.
+        </p>
+
+        <p>
+          The anchor text describes the destination, making the link more
+          informative for visitors.
+        </p>
+
+        <p>
+          Both examples point to the same existing lesson. The difference is how
+          clearly the anchor text describes the destination.
+        </p>
+
+        <h2>7. What Is a Broken Internal Link?</h2>
+
+        <p>
+          A broken internal link points to a page that cannot be found or
+          accessed correctly.
+        </p>
+
+        <p>
+          For example, imagine a lesson file is renamed, but another lesson
+          still links to its old filename. Clicking that link may return a 404
+          error.
+        </p>
+
+        <p>To prevent broken links:</p>
+
+        <ul>
+          <li>Use the correct filename and relative path.</li>
+
+          <li>Update links whenever you rename or move a lesson file.</li>
+
+          <li>Restore a page if it was deleted accidentally.</li>
+
+          <li>
+            Redirect an old URL when a page has permanently moved and a suitable
+            replacement exists.
+          </li>
+
+          <li>Test your links in the browser after making changes.</li>
+        </ul>
+
+        <p>
+          A 404 response is not automatically an SEO problem. The important
+          thing is to handle missing pages correctly and avoid linking visitors
+          to destinations that should be available.
+        </p>
+
+        <h2>8. Common Internal Linking Mistakes</h2>
+
+        <ul>
+          <li>Linking to unrelated pages.</li>
+
+          <li>Using unnatural, keyword-stuffed anchor text.</li>
+
+          <li>Leaving important pages difficult to discover.</li>
+
+          <li>Ignoring broken internal links.</li>
+
+          <li>Adding excessive links that distract visitors.</li>
+
+          <li>Forgetting to update links after renaming files.</li>
+
+          <li>Using incorrect relative paths.</li>
+        </ul>
+
+        <h2>9. Practical Example Using Our SEO Lessons</h2>
+
+        <p>
+          Our SEO learning website contains several lessons that can be
+          connected naturally.
+        </p>
+
+        <p>
+          For example, while explaining keyword research, you could direct
+          visitors to related lessons:
+        </p>
+
+        <ul>
+          <li>
+            <a href="search-intent.html">Search Intent</a>
+            explains what users want when they search.
+          </li>
+
+          <li>
+            <a href="long-tail-keywords.html">Long-Tail Keywords</a>
+            explains longer, more specific search phrases.
+          </li>
+
+          <li>
+            <a href="keyword-mapping.html">Keyword Mapping</a>
+            explains how to assign keywords to appropriate pages.
+          </li>
+        </ul>
+
+        <p>
+          These links connect related topics and help visitors follow a logical
+          learning path.
+        </p>
+
+        <p>
+          Notice that the links use only lesson filenames from our existing
+          project. Since these files are in the same folder, we do not need to
+          add <code>../</code> before their filenames.
+        </p>
+
+        <h2>10. Relative Paths: Avoiding 404 Errors</h2>
+
+        <p>
+          Understanding relative paths is especially important when building a
+          static website.
+        </p>
+
+        <h3>Linking Between Lesson Files</h3>
+
+        <p>
+          When the current file and destination file are both inside the
+          <code>lessons</code> folder, use the destination filename:
+        </p>
+
+        <pre><code>&lt;a href="keyword-research.html"&gt;Keyword Research&lt;/a&gt;</code></pre>
+
+        <h3>Linking to the Homepage</h3>
+
+        <p>The homepage is one folder above the current lesson file, so use:</p>
+
+        <pre><code>&lt;a href="../index.html"&gt;Home&lt;/a&gt;</code></pre>
+
+        <h3>Linking to the Lessons Section</h3>
+
+        <p>To navigate to the lessons section on the homepage, use:</p>
+
+        <pre><code>&lt;a href="../index.html#lessons"&gt;All Lessons&lt;/a&gt;</code></pre>
+
+        <p>
+          <strong>Important:</strong> A relative path must match your actual
+          folder structure and filename. Always test the destination in your
+          browser.
+        </p>
+
+        <h2>11. Lesson Takeaway</h2>
+
+        <p>
+          Internal linking connects pages within your own website. Relevant
+          links, descriptive anchor text, and a logical structure help visitors
+          navigate your content and help search engines discover and understand
+          the relationships between your pages.
+        </p>
+
+        <p>
+          As a developer, always verify your link paths and make sure the
+          destination files actually exist.
+        </p>
+
+        <button id="complete-lesson" type="button">Mark as Completed</button>
+
+        <nav class="lesson-navigation" aria-label="Lesson navigation">
+          <a href="seo-friendly-urls.html">← Previous Lesson</a>
+          <a href="../index.html#lessons">All Lessons</a>
+          <a href="http-status-codes.html">Next Lesson →</a>
+        </nav>
+      </article>
+    </main>
+
+    <footer>
+      <p>Learn SEO. Practise SEO. Grow your skills.</p>
+    </footer>
+
+    <script src="../js/progress.js"></script>
+
+    <script>
+      const completeButton = document.getElementById("complete-lesson");
+      const lessonId = "internal-linking";
+
+      if (isLessonCompleted(lessonId)) {
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      }
+
+      completeButton.addEventListener("click", function () {
+        markLessonCompleted(lessonId);
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      });
+    </script>
+  </body>
+</html>

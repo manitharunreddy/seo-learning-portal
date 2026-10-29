@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn Image SEO, including descriptive filenames, alt text, image compression, responsive images, and image optimization techniques."
+    />
+    <title>Image SEO | SEO Zero to Hero</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">SEO Zero to Hero</a>
+      <nav aria-label="Main navigation">
+        <a href="../index.html#lessons">Lessons</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <article id="lesson-content">
+        <p>LESSON 17</p>
+        <h1>Image SEO</h1>
+
+        <p>
+          Bro, images make a website attractive, but poorly optimized images can
+          slow down your pages and make it harder for search engines to
+          understand what the images represent. Image SEO helps you optimize
+          images for users and search engines.
+        </p>
+
+        <h2>1. What Is Image SEO?</h2>
+        <p>
+          Image SEO means optimizing website images so they load efficiently,
+          provide useful information, improve accessibility, and can be
+          understood by search engines.
+        </p>
+
+        <p>
+          <strong>Simple definition:</strong> Image SEO is the process of making
+          your images accessible, relevant, and efficient for your website.
+        </p>
+
+        <h2>2. Why Is Image SEO Important?</h2>
+        <ul>
+          <li>Optimized images can help improve page loading speed.</li>
+          <li>Descriptive alt text helps people using screen readers.</li>
+          <li>Search engines can better understand the context of images.</li>
+          <li>Relevant images can appear in image search results.</li>
+          <li>Properly displayed images improve the user experience.</li>
+        </ul>
+
+        <h2>3. Use Descriptive Image Filenames</h2>
+        <p>
+          Before uploading an image, give it a meaningful filename that
+          describes its content.
+        </p>
+
+        <p><strong>Less useful filename:</strong> <code>IMG001.jpg</code></p>
+        <p>
+          <strong>Better filename:</strong>
+          <code>chocolate-birthday-cake.jpg</code>
+        </p>
+
+        <p>
+          Use short, descriptive filenames and separate words with hyphens.
+          Avoid stuffing filenames with repeated keywords.
+        </p>
+
+        <h2>4. Add Appropriate Alt Text</h2>
+        <p>
+          The <code>alt</code> attribute provides a text alternative for an
+          image. It is particularly useful for people who use screen readers and
+          when an image cannot be displayed.
+        </p>
+
+        <p>Example:</p>
+
+        <pre><code>&lt;img
+  src="../assets/chocolate-birthday-cake.jpg"
+  alt="Chocolate birthday cake decorated with strawberries"
+&gt;</code></pre>
+
+        <p>
+          Use alt text that accurately describes the image in its context. Don't
+          force keywords into alt text when they do not naturally describe the
+          image.
+        </p>
+
+        <h3>When should alt text be empty?</h3>
+        <p>
+          If an image is purely decorative and adds no meaningful information,
+          use an empty alt attribute so assistive technologies can skip it.
+        </p>
+
+        <pre><code>&lt;img src="../assets/decorative-divider.png" alt=""&gt;</code></pre>
+
+        <h2>5. Choose the Right Image Format</h2>
+        <ul>
+          <li><strong>JPEG:</strong> Commonly used for photographs.</li>
+          <li>
+            <strong>PNG:</strong> Useful when lossless quality or transparency
+            is needed.
+          </li>
+          <li>
+            <strong>WebP:</strong> Often provides smaller files with good visual
+            quality.
+          </li>
+          <li>
+            <strong>AVIF:</strong> Can provide highly efficient image
+            compression in supported browsers.
+          </li>
+          <li>
+            <strong>SVG:</strong> Useful for scalable logos, icons, and vector
+            illustrations.
+          </li>
+        </ul>
+
+        <p>
+          Choose a format based on the image type, quality requirements, browser
+          support, and file size.
+        </p>
+
+        <h2>6. Compress Images</h2>
+        <p>
+          Large image files take longer to download, particularly on slower
+          internet connections. Compression reduces file size while aiming to
+          preserve acceptable visual quality.
+        </p>
+
+        <p>Before adding an image to your website:</p>
+        <ol>
+          <li>Check its file size.</li>
+          <li>Resize it to appropriate dimensions.</li>
+          <li>Compress it using a suitable method.</li>
+          <li>Check the result to ensure the image still looks good.</li>
+        </ol>
+
+        <h2>7. Use Responsive Images</h2>
+        <p>
+          Responsive images allow browsers to choose an appropriate image source
+          for the visitor's screen and display requirements.
+        </p>
+
+        <p>Example using <code>srcset</code> and <code>sizes</code>:</p>
+
+        <pre><code>&lt;img
+  src="../assets/product-medium.jpg"
+  srcset="../assets/product-small.jpg 480w,
+          ../assets/product-medium.jpg 800w"
+  sizes="(max-width: 600px) 100vw, 800px"
+  alt="A product displayed on a table"
+&gt;</code></pre>
+
+        <p>
+          This example assumes the corresponding image files exist in your
+          project's <code>assets</code> folder. Replace the filenames with
+          actual files from your project before using the code.
+        </p>
+
+        <h2>8. Set Image Dimensions</h2>
+        <p>
+          Providing image dimensions helps browsers reserve space before an
+          image finishes loading. This can reduce unexpected layout shifts.
+        </p>
+
+        <pre><code>&lt;img
+  src="../assets/product.jpg"
+  alt="Product displayed on a table"
+  width="800"
+  height="600"
+&gt;</code></pre>
+
+        <p>
+          Use the image's actual dimensions or dimensions that correctly
+          represent its aspect ratio.
+        </p>
+
+        <h2>9. Lazy Loading Images</h2>
+        <p>
+          Lazy loading allows images outside the initial visible area to load
+          when they are approaching the user's viewing area.
+        </p>
+
+        <pre><code>&lt;img
+  src="../assets/gallery-image.jpg"
+  alt="A product in the gallery"
+  loading="lazy"
+&gt;</code></pre>
+
+        <p>
+          This can reduce unnecessary initial loading work. However, avoid lazy
+          loading the main image that is immediately visible when the page
+          loads, especially if it is the page's largest contentful image.
+        </p>
+
+        <h2>10. Image SEO Mistakes to Avoid</h2>
+        <ul>
+          <li>Using unclear filenames for important images.</li>
+          <li>Leaving meaningful images without appropriate alt text.</li>
+          <li>Adding keywords that do not describe the image.</li>
+          <li>Uploading unnecessarily large image files.</li>
+          <li>Stretching images and changing their aspect ratio.</li>
+          <li>Using image paths that point to files that do not exist.</li>
+          <li>Lazy loading the main image that should load immediately.</li>
+          <li>
+            Using important text inside images without providing that
+            information as page text.
+          </li>
+        </ul>
+
+        <h2>11. Practical Task</h2>
+        <p>
+          Bro, open your own SEO learning portal and inspect the images used
+          throughout your website.
+        </p>
+
+        <ol>
+          <li>Check whether each image has an appropriate filename.</li>
+          <li>Verify that meaningful images have descriptive alt text.</li>
+          <li>Check whether large images can be compressed.</li>
+          <li>Confirm that image paths point to existing files.</li>
+          <li>Check whether images fit correctly on mobile screens.</li>
+        </ol>
+
+        <h2>12. Quick Revision</h2>
+        <ul>
+          <li>Use descriptive filenames.</li>
+          <li>Write useful alt text for meaningful images.</li>
+          <li>Choose suitable image formats and compress files.</li>
+          <li>Use responsive images when appropriate.</li>
+          <li>Specify image dimensions to help prevent layout shifts.</li>
+          <li>Use lazy loading for suitable off-screen images.</li>
+        </ul>
+
+        <button id="complete-lesson" type="button">Mark as Completed</button>
+
+        <nav class="lesson-navigation" aria-label="Lesson navigation">
+          <a href="mobile-seo.html">← Previous Lesson</a>
+          <a href="../index.html#lessons">All Lessons</a>
+          <a href="core-web-vitals.html">Next Lesson →</a>
+        </nav>
+      </article>
+    </main>
+
+    <footer>
+      <p>Learn SEO. Practise SEO. Grow your skills.</p>
+    </footer>
+
+    <script src="../js/progress.js"></script>
+    <script>
+      const completeButton = document.getElementById("complete-lesson");
+      const lessonId = "image-seo";
+
+      if (isLessonCompleted(lessonId)) {
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      }
+
+      completeButton.addEventListener("click", function () {
+        markLessonCompleted(lessonId);
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      });
+    </script>
+  </body>
+</html>

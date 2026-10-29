@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Learn keyword mapping in SEO, assign target keywords to website pages, and understand keyword cannibalization."
+    />
+
+    <title>Keyword Mapping | SEO Zero to Hero</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- Shared website navigation. -->
+    <header>
+      <a href="../index.html">SEO Zero to Hero</a>
+
+      <nav aria-label="Main navigation">
+        <a href="../index.html#lessons">Lessons</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+    </header>
+
+    <!-- Main lesson content. -->
+    <main>
+      <article id="lesson-content">
+        <p>LESSON 08</p>
+
+        <h1>What Is Keyword Mapping?</h1>
+
+        <p>
+          Keyword mapping is the process of assigning relevant target keywords
+          to specific pages on a website. It helps every page focus on a clear
+          topic and user need.
+        </p>
+
+        <h2>1. Why Is Keyword Mapping Important?</h2>
+
+        <ul>
+          <li>Every important page has a clear SEO purpose.</li>
+          <li>Users can find content that matches their search.</li>
+          <li>It helps organize website content logically.</li>
+          <li>It helps identify missing content opportunities.</li>
+          <li>It reduces unnecessary overlap between pages.</li>
+        </ul>
+
+        <h2>2. Real-Time Example</h2>
+
+        <p>
+          Imagine we are building a website for petrol bunk management software.
+          We can assign different target keywords to different pages.
+        </p>
+
+        <ul>
+          <li><strong>Homepage:</strong> Petrol bunk management software</li>
+          <li>
+            <strong>Features page:</strong> Petrol bunk billing software
+            features
+          </li>
+          <li><strong>Pricing page:</strong> Petrol bunk software pricing</li>
+          <li>
+            <strong>Blog article:</strong> How to manage petrol bunk inventory
+          </li>
+        </ul>
+
+        <p>
+          Each page serves a different purpose. The homepage introduces the
+          product, the features page explains its capabilities, the pricing page
+          discusses cost, and the blog article answers an informational
+          question.
+        </p>
+
+        <h2>3. How to Perform Keyword Mapping</h2>
+
+        <ol>
+          <li>
+            <strong>Collect keywords:</strong>
+            Research relevant keywords related to your website and audience.
+          </li>
+          <li>
+            <strong>Understand search intent:</strong>
+            Identify what users expect when they search for each keyword.
+          </li>
+          <li>
+            <strong>Group related keywords:</strong>
+            Group keywords that can be answered effectively by the same page.
+          </li>
+          <li>
+            <strong>Assign keywords to pages:</strong>
+            Select one primary topic for each page and support it with relevant
+            secondary keywords.
+          </li>
+          <li>
+            <strong>Review existing pages:</strong>
+            Check whether your website already has a page serving the same need.
+          </li>
+          <li>
+            <strong>Identify content gaps:</strong>
+            Create new pages when they serve a distinct user need.
+          </li>
+        </ol>
+
+        <h2>4. What Is Keyword Cannibalization?</h2>
+
+        <p>
+          Keyword cannibalization can happen when multiple pages target the same
+          or very similar search intent and compete for similar search results.
+        </p>
+
+        <p>
+          <strong>Example:</strong> Imagine two blog posts target "best petrol
+          bunk billing software" and contain almost identical information. You
+          may need to combine them or make their purposes more distinct.
+        </p>
+
+        <p>
+          Having the same keyword on multiple pages is not automatically a
+          problem. The important question is whether the pages satisfy different
+          user needs or unnecessarily overlap.
+        </p>
+
+        <h2>5. Where Should You Use Your Target Keyword?</h2>
+
+        <p>Use your target keyword naturally in relevant places, such as:</p>
+
+        <ul>
+          <li>Page title.</li>
+          <li>Main heading (H1).</li>
+          <li>URL, when appropriate.</li>
+          <li>Opening paragraph, when natural.</li>
+          <li>Relevant subheadings and body content.</li>
+          <li>Internal links when they accurately describe the destination.</li>
+        </ul>
+
+        <p>
+          Avoid repeating keywords unnaturally. Write helpful content for people
+          first.
+        </p>
+
+        <h2>6. Common Keyword Mapping Mistakes</h2>
+
+        <ul>
+          <li>Targeting unrelated keywords on the same page.</li>
+          <li>Creating pages with almost identical purposes.</li>
+          <li>Ignoring the search intent behind a keyword.</li>
+          <li>Creating unnecessary pages for every keyword variation.</li>
+          <li>
+            Forgetting to update the keyword map when the website changes.
+          </li>
+        </ul>
+
+        <h2>Key Takeaway</h2>
+
+        <p>
+          Keyword mapping connects the right keyword to the right page. Choose a
+          clear primary topic for each page and support it with relevant
+          secondary keywords.
+        </p>
+
+        <!-- Marks this lesson as completed. -->
+        <button id="complete-lesson" type="button">Mark as Completed</button>
+
+        <!-- Navigation between course lessons. -->
+        <nav class="lesson-navigation" aria-label="Lesson navigation">
+          <a href="long-tail-keywords.html">&larr; Previous Lesson</a>
+
+          <a href="../index.html#lessons">All Lessons</a>
+
+          <a href="title-tags-meta-descriptions.html">Next Lesson &rarr;</a>
+        </nav>
+      </article>
+    </main>
+
+    <!-- Shared website footer. -->
+    <footer>
+      <p>Learn SEO. Practise SEO. Grow your skills.</p>
+    </footer>
+
+    <!-- Loads lesson progress functions. -->
+    <script src="../js/progress.js"></script>
+
+    <script>
+      const completeButton = document.getElementById("complete-lesson");
+      const lessonId = "keyword-mapping";
+
+      // Restores the saved completion state.
+      if (isLessonCompleted(lessonId)) {
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      }
+
+      // Saves progress when the lesson is completed.
+      completeButton.addEventListener("click", function () {
+        markLessonCompleted(lessonId);
+
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      });
+    </script>
+  </body>
+</html>

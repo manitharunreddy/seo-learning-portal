@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Describes the lesson for search engines and potential visitors. -->
+    <meta
+      name="description"
+      content="Learn what SEO is, how search engines crawl and index web pages, and how rankings work with beginner-friendly examples."
+    />
+
+    <!-- Gives this lesson a descriptive browser-tab title. -->
+    <title>What Is SEO? A Beginner's Guide | SEO Zero to Hero</title>
+
+    <!-- Loads the shared website styles. -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Provides navigation back to the course homepage. -->
+    <header>
+      <a href="../index.html">SEO Zero to Hero</a>
+
+      <nav aria-label="Main navigation">
+        <a href="../index.html#lessons">Lessons</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+    </header>
+
+    <!-- Contains the main educational content. -->
+    <main>
+      <article id="lesson-content">
+        <p>LESSON 01</p>
+
+        <h1>What Is SEO?</h1>
+
+        <p>
+          SEO stands for Search Engine Optimization. It is the process of
+          improving a website to help search engines understand its content and
+          help people discover it through organic search.
+        </p>
+
+        <h2>How Do Search Engines Work?</h2>
+
+        <p>Search engines generally perform three key activities:</p>
+
+        <h3>1. Crawling</h3>
+        <p>
+          Search engines discover pages by following links and accessing URLs.
+          Automated programs called crawlers help discover and retrieve web
+          content.
+        </p>
+
+        <h3>2. Indexing</h3>
+        <p>
+          Search engines analyze discovered content and may store information
+          about it in their index. Crawling does not guarantee that a page will
+          be indexed.
+        </p>
+
+        <h3>3. Ranking</h3>
+        <p>
+          When someone searches, a search engine orders relevant results using
+          many signals and systems. Good SEO helps search engines understand
+          your content, but it cannot guarantee a particular ranking.
+        </p>
+
+        <h2>Real-Time Example</h2>
+
+        <p>
+          Imagine you own a petrol bunk software website. Someone searches for
+          "petrol bunk management software". Helpful content, clear page titles,
+          useful information, and a crawlable website can help search engines
+          understand whether your page matches that search.
+        </p>
+
+        <h2>Key Takeaway</h2>
+
+        <p>
+          SEO helps improve the discoverability of your website in organic
+          search results. Focus on useful content, accessible pages, and a good
+          user experience.
+        </p>
+
+        <!-- Allows learners to mark this lesson as completed. -->
+        <button id="complete-lesson" type="button">Mark as Completed</button>
+        <!-- Provides navigation between course lessons. -->
+        <nav class="lesson-navigation" aria-label="Lesson navigation">
+          <a href="../index.html#lessons">&larr; All Lessons</a>
+
+          <a href="how-search-engines-work.html">Next Lesson &rarr;</a>
+        </nav>
+      </article>
+    </main>
+
+    <!-- Displays the shared course footer. -->
+    <footer>
+      <p>Learn SEO. Practise SEO. Grow your skills.</p>
+    </footer>
+
+    <!-- Loads the lesson progress functions. -->
+    <script src="../js/progress.js"></script>
+
+    <!-- Handles lesson completion and restores its saved state. -->
+    <script>
+      const completeButton = document.getElementById("complete-lesson");
+      const lessonId = "what-is-seo";
+
+      // Restores the saved completion state when the page loads.
+      if (isLessonCompleted(lessonId)) {
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      }
+
+      // Saves progress when the learner completes the lesson.
+      completeButton.addEventListener("click", function () {
+        markLessonCompleted(lessonId);
+
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      });
+    </script>
+  </body>
+</html>

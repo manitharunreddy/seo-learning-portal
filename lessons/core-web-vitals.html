@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn Core Web Vitals, including LCP, INP, and CLS, how they measure user experience, and how to improve website performance."
+    />
+    <title>Core Web Vitals | SEO Zero to Hero</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">SEO Zero to Hero</a>
+      <nav aria-label="Main navigation">
+        <a href="../index.html#lessons">Lessons</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <article id="lesson-content">
+        <p>LESSON 18</p>
+        <h1>Core Web Vitals</h1>
+
+        <p>
+          Bro, imagine opening a website. The page takes too long to display its
+          main content, a button responds slowly, or the layout suddenly moves
+          while you're trying to click something. These problems create a poor
+          user experience.
+        </p>
+
+        <p>
+          Core Web Vitals are Google's key metrics for measuring important
+          aspects of the real-world experience users have when loading and
+          interacting with a webpage.
+        </p>
+
+        <h2>1. What Are Core Web Vitals?</h2>
+        <p>
+          Core Web Vitals are a set of performance metrics that measure loading
+          performance, responsiveness, and visual stability.
+        </p>
+
+        <p>
+          <strong>Simple definition:</strong> Core Web Vitals help us understand
+          how quickly a page displays its main content, responds to user
+          interactions, and stays visually stable.
+        </p>
+
+        <h2>2. The Three Core Web Vitals</h2>
+        <p>There are three key metrics:</p>
+
+        <ul>
+          <li>
+            <strong>LCP:</strong> Largest Contentful Paint — loading
+            performance.
+          </li>
+          <li>
+            <strong>INP:</strong> Interaction to Next Paint — responsiveness.
+          </li>
+          <li>
+            <strong>CLS:</strong> Cumulative Layout Shift — visual stability.
+          </li>
+        </ul>
+
+        <h2>3. LCP — Largest Contentful Paint</h2>
+        <p>
+          LCP measures how long it takes for the largest visible image or text
+          block in the viewport to render.
+        </p>
+
+        <p>
+          <strong>Friend explanation:</strong> Page open chesinappudu, user ki
+          important ga kanipinche main content entha fast ga display avuthundo
+          LCP help chesthundi.
+        </p>
+
+        <h3>LCP thresholds</h3>
+        <ul>
+          <li><strong>Good:</strong> 2.5 seconds or less.</li>
+          <li>
+            <strong>Needs improvement:</strong> More than 2.5 seconds and up to
+            4 seconds.
+          </li>
+          <li><strong>Poor:</strong> More than 4 seconds.</li>
+        </ul>
+
+        <h3>Common causes of poor LCP</h3>
+        <ul>
+          <li>Slow server response times.</li>
+          <li>Large, unoptimized images.</li>
+          <li>Render-blocking CSS or JavaScript.</li>
+          <li>Slow loading of important resources.</li>
+        </ul>
+
+        <h3>How to improve LCP</h3>
+        <ul>
+          <li>Improve server response time.</li>
+          <li>Compress and resize large images.</li>
+          <li>Load the main above-the-fold image promptly.</li>
+          <li>Reduce unnecessary render-blocking resources.</li>
+          <li>Use caching and a content delivery network where appropriate.</li>
+        </ul>
+
+        <h2>4. INP — Interaction to Next Paint</h2>
+        <p>
+          INP measures how responsive a page is to user interactions, such as
+          clicks, taps, and keyboard input, throughout a visit.
+        </p>
+
+        <p>
+          <strong>Friend explanation:</strong> Bro, button click chesinappudu
+          website response ivvadaniki ekkuva time theeskunte, user ki website
+          slow ga anipisthundi. INP ee responsiveness ni measure chesthundi.
+        </p>
+
+        <h3>INP thresholds</h3>
+        <ul>
+          <li><strong>Good:</strong> 200 milliseconds or less.</li>
+          <li>
+            <strong>Needs improvement:</strong> More than 200 milliseconds and
+            up to 500 milliseconds.
+          </li>
+          <li><strong>Poor:</strong> More than 500 milliseconds.</li>
+        </ul>
+
+        <h3>Common causes of poor INP</h3>
+        <ul>
+          <li>Long-running JavaScript tasks.</li>
+          <li>Too much JavaScript running on the main thread.</li>
+          <li>Expensive event handlers.</li>
+          <li>Complex rendering and layout calculations.</li>
+        </ul>
+
+        <h3>How to improve INP</h3>
+        <ul>
+          <li>Remove unnecessary JavaScript.</li>
+          <li>Break up long-running tasks.</li>
+          <li>Optimize click and input event handlers.</li>
+          <li>Avoid unnecessary DOM updates.</li>
+          <li>Keep interactions responsive while other work runs.</li>
+        </ul>
+
+        <h2>5. CLS — Cumulative Layout Shift</h2>
+        <p>
+          CLS measures unexpected visual movement of page content during the
+          page's lifespan.
+        </p>
+
+        <p>
+          <strong>Friend explanation:</strong> Bro, nuvvu oka button click
+          cheyyabothunte sudden ga page content move ayi, wrong button click
+          ayithe, adi layout shift problem avvachu.
+        </p>
+
+        <h3>CLS thresholds</h3>
+        <ul>
+          <li><strong>Good:</strong> 0.1 or less.</li>
+          <li>
+            <strong>Needs improvement:</strong> More than 0.1 and up to 0.25.
+          </li>
+          <li><strong>Poor:</strong> More than 0.25.</li>
+        </ul>
+
+        <h3>Common causes of poor CLS</h3>
+        <ul>
+          <li>Images without reserved dimensions.</li>
+          <li>Advertisements or embeds inserted without reserved space.</li>
+          <li>Content injected above existing content.</li>
+          <li>Web fonts that cause visible layout changes.</li>
+        </ul>
+
+        <h3>How to improve CLS</h3>
+        <ul>
+          <li>Specify image width and height.</li>
+          <li>Reserve space for ads and embedded content.</li>
+          <li>
+            Avoid inserting new content above existing content unexpectedly.
+          </li>
+          <li>Choose font-loading strategies that minimize layout changes.</li>
+        </ul>
+
+        <h2>6. Quick Comparison</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>Measures</th>
+              <th>Good Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>LCP</td>
+              <td>Loading performance</td>
+              <td>≤ 2.5 seconds</td>
+            </tr>
+            <tr>
+              <td>INP</td>
+              <td>Responsiveness</td>
+              <td>≤ 200 milliseconds</td>
+            </tr>
+            <tr>
+              <td>CLS</td>
+              <td>Visual stability</td>
+              <td>≤ 0.1</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>7. Are Core Web Vitals a Ranking Factor?</h2>
+        <p>
+          Core Web Vitals are part of Google's page experience signals. Good
+          scores can contribute to a better user experience, but they do not
+          guarantee higher rankings.
+        </p>
+
+        <p>
+          Relevant, useful content and many other factors also influence search
+          rankings. Don't sacrifice content quality just to improve a
+          performance score.
+        </p>
+
+        <h2>8. How to Check Core Web Vitals</h2>
+        <p>
+          You can assess performance using browser developer tools and Google's
+          performance reporting tools.
+        </p>
+
+        <ul>
+          <li>
+            <strong>Laboratory data:</strong> Measurements collected in a
+            controlled testing environment.
+          </li>
+          <li>
+            <strong>Field data:</strong> Measurements collected from real users
+            under real-world conditions.
+          </li>
+        </ul>
+
+        <p>
+          Lab tests are useful for debugging. Field data helps you understand
+          how your website performs for actual visitors. Results may differ
+          because devices, networks, and user interactions vary.
+        </p>
+
+        <h2>9. Practical Task</h2>
+        <p>Bro, test your SEO learning portal and inspect these three areas:</p>
+
+        <ol>
+          <li>
+            <strong>LCP:</strong> Identify the main visible content and check
+            whether it loads quickly.
+          </li>
+          <li>
+            <strong>INP:</strong> Test whether navigation links and lesson
+            completion buttons respond smoothly.
+          </li>
+          <li>
+            <strong>CLS:</strong> Watch whether the layout unexpectedly shifts
+            while the page loads.
+          </li>
+        </ol>
+
+        <p>
+          Also check that images have dimensions and that unnecessary JavaScript
+          does not delay interactions.
+        </p>
+
+        <h2>10. Quick Revision</h2>
+        <ul>
+          <li>LCP measures loading performance.</li>
+          <li>INP measures responsiveness.</li>
+          <li>CLS measures visual stability.</li>
+          <li>Real-user data and lab tests provide different insights.</li>
+          <li>
+            Good Core Web Vitals improve user experience but do not guarantee
+            rankings.
+          </li>
+        </ul>
+
+        <button id="complete-lesson" type="button">Mark as Completed</button>
+
+        <nav class="lesson-navigation" aria-label="Lesson navigation">
+          <a href="image-seo.html">← Previous Lesson</a>
+          <a href="../index.html#lessons">All Lessons</a>
+          <a href="website-speed-optimization.html">Next Lesson →</a>
+        </nav>
+      </article>
+    </main>
+
+    <footer>
+      <p>Learn SEO. Practise SEO. Grow your skills.</p>
+    </footer>
+
+    <script src="../js/progress.js"></script>
+    <script>
+      const completeButton = document.getElementById("complete-lesson");
+      const lessonId = "core-web-vitals";
+
+      if (isLessonCompleted(lessonId)) {
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      }
+
+      completeButton.addEventListener("click", function () {
+        markLessonCompleted(lessonId);
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      });
+    </script>
+  </body>
+</html>

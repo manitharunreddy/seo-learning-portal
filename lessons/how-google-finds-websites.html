@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Learn how Google discovers websites through links and XML sitemaps, and how crawling works with practical SEO examples."
+    />
+
+    <title>How Google Finds Websites | SEO Zero to Hero</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- Shared website navigation. -->
+    <header>
+      <a href="../index.html">SEO Zero to Hero</a>
+
+      <nav aria-label="Main navigation">
+        <a href="../index.html#lessons">Lessons</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+    </header>
+
+    <!-- Main lesson content. -->
+    <main>
+      <article id="lesson-content">
+        <p>LESSON 04</p>
+
+        <h1>How Does Google Find Websites?</h1>
+
+        <p>
+          Google needs to discover web pages before it can crawl and potentially
+          index them. It uses several methods to find URLs across the web.
+        </p>
+
+        <h2>1. Discovering Pages Through Links</h2>
+
+        <p>
+          Search engines can discover new pages by following links from pages
+          they already know about.
+        </p>
+
+        <p>
+          <strong>Example:</strong> Your homepage links to your products page.
+          Google may follow that link to discover the products page.
+        </p>
+
+        <h2>2. Discovering Pages Through XML Sitemaps</h2>
+
+        <p>
+          An XML sitemap is a file that lists important URLs on your website. It
+          can help search engines discover pages.
+        </p>
+
+        <p>
+          A sitemap commonly uses a filename such as
+          <code>sitemap.xml</code>.
+        </p>
+
+        <p>
+          Important: Submitting a sitemap does not guarantee that Google will
+          crawl or index every listed URL.
+        </p>
+
+        <h2>3. What Is Googlebot?</h2>
+
+        <p>
+          Googlebot is the name commonly used for Google's web crawling
+          software. It requests pages so Google can discover and process their
+          content.
+        </p>
+
+        <p>
+          <strong>Example:</strong> Googlebot requests a public article on your
+          website and retrieves its accessible HTML content.
+        </p>
+
+        <h2>4. Can Google Find Every Page?</h2>
+
+        <p>
+          No. Some pages may be difficult to discover because they have no links
+          pointing to them, are unavailable, or have technical problems.
+        </p>
+
+        <p>
+          Important pages should have useful internal links and should be
+          accessible to search engines when you want them to be discovered.
+        </p>
+
+        <h2>5. Does Discovery Guarantee Indexing?</h2>
+
+        <p>
+          No. Discovering a URL is different from crawling it, and crawling is
+          different from indexing it.
+        </p>
+
+        <ul>
+          <li><strong>Discovery:</strong> Google learns that a URL exists.</li>
+          <li>
+            <strong>Crawling:</strong> Googlebot requests and retrieves a page.
+          </li>
+          <li>
+            <strong>Indexing:</strong> Google processes the page and may include
+            it in its index.
+          </li>
+        </ul>
+
+        <h2>Real-Time Example</h2>
+
+        <p>
+          Imagine your petrol bunk software website has a new page about
+          inventory management. You link to that page from your homepage and
+          include its URL in your sitemap. These steps can help Google discover
+          the page, but crawling and indexing are not guaranteed.
+        </p>
+
+        <h2>Key Takeaway</h2>
+
+        <p>
+          Use clear internal links, maintain an accurate XML sitemap, and ensure
+          important pages are accessible. These practices help search engines
+          discover your website's content.
+        </p>
+
+        <!-- Marks this lesson as completed. -->
+        <button id="complete-lesson" type="button">Mark as Completed</button>
+
+        <!-- Navigation between course lessons. -->
+        <nav class="lesson-navigation" aria-label="Lesson navigation">
+          <a href="types-of-seo.html"> &larr; Previous Lesson </a>
+
+          <a href="../index.html#lessons">All Lessons</a>
+
+          <a href="keyword-research.html"> Next Lesson &rarr; </a>
+        </nav>
+      </article>
+    </main>
+
+    <!-- Shared website footer. -->
+    <footer>
+      <p>Learn SEO. Practise SEO. Grow your skills.</p>
+    </footer>
+
+    <!-- Loads lesson progress functions. -->
+    <script src="../js/progress.js"></script>
+
+    <script>
+      const completeButton = document.getElementById("complete-lesson");
+      const lessonId = "how-google-finds-websites";
+
+      // Restores the saved completion state.
+      if (isLessonCompleted(lessonId)) {
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      }
+
+      // Saves progress when the lesson is completed.
+      completeButton.addEventListener("click", function () {
+        markLessonCompleted(lessonId);
+
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      });
+    </script>
+  </body>
+</html>

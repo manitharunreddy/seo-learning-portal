@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn canonical tags in SEO, why duplicate URLs cause confusion, and how canonical tags help search engines understand the preferred page."
+    />
+    <title>Canonical Tags | SEO Zero to Hero</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">SEO Zero to Hero</a>
+      <nav aria-label="Main navigation">
+        <a href="../index.html#lessons">Lessons</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <article id="lesson-content">
+        <p>LESSON 15</p>
+        <h1>Canonical Tags</h1>
+
+        <p>
+          Bro, sometimes the same webpage can be accessible through multiple
+          URLs. Search engines may see these as separate URLs, even when the
+          content is identical or very similar. A canonical tag helps indicate
+          which URL should be treated as the preferred version.
+        </p>
+
+        <h2>1. What Is a Canonical Tag?</h2>
+        <p>
+          A canonical tag is an HTML element placed inside the
+          <code>&lt;head&gt;</code> section of a webpage. It tells search
+          engines which URL is the preferred version when duplicate or similar
+          pages exist.
+        </p>
+
+        <p>
+          <strong>Simple definition:</strong> A canonical tag suggests the main
+          URL that search engines should use for a page.
+        </p>
+
+        <h2>2. Why Do We Need Canonical Tags?</h2>
+        <p>
+          Imagine your website has a product page that can be opened using
+          different URLs because of tracking parameters or filters.
+        </p>
+
+        <p>For example, these URLs might show the same product:</p>
+        <ul>
+          <li><code>/products/shirt</code></li>
+          <li><code>/products/shirt?source=home</code></li>
+          <li><code>/products/shirt?campaign=sale</code></li>
+        </ul>
+
+        <p>
+          Search engines may discover all three URLs. If they contain the same
+          main content, you can indicate that <code>/products/shirt</code> is
+          your preferred URL.
+        </p>
+
+        <h2>3. Canonical Tag Syntax</h2>
+        <p>A canonical tag looks like this:</p>
+
+        <pre><code>&lt;head&gt;
+  &lt;link rel="canonical" href="https://your-own-domain.com/products/shirt" /&gt;
+&lt;/head&gt;</code></pre>
+
+        <p>
+          Replace the example domain and path with the actual preferred URL from
+          your own website. The canonical URL should be a valid URL that you
+          control.
+        </p>
+
+        <h2>4. How Does It Work?</h2>
+        <ol>
+          <li>A search engine discovers multiple URLs with similar content.</li>
+          <li>Your canonical tag identifies the URL you prefer.</li>
+          <li>
+            The search engine considers that signal along with other signals.
+          </li>
+          <li>
+            The search engine decides which URL is most appropriate to index.
+          </li>
+        </ol>
+
+        <p>
+          <strong>Important:</strong> A canonical tag is a hint, not a strict
+          command. Search engines may choose a different canonical URL when
+          other signals suggest it is more appropriate.
+        </p>
+
+        <h2>5. Self-Referencing Canonical Tags</h2>
+        <p>
+          A self-referencing canonical tag points to the preferred URL of the
+          page on which it appears.
+        </p>
+
+        <p>
+          For example, if your preferred product URL is
+          <code>/products/shirt</code>, that page can contain a canonical tag
+          pointing to its own preferred URL.
+        </p>
+
+        <p>
+          This can help reinforce which URL you want search engines to consider
+          canonical, although it does not guarantee that the URL will be
+          selected.
+        </p>
+
+        <h2>6. Canonical Tags vs. Redirects</h2>
+        <ul>
+          <li>
+            <strong>Canonical tag:</strong> Suggests the preferred URL while
+            allowing the other URL to remain accessible.
+          </li>
+          <li>
+            <strong>301 redirect:</strong> Sends visitors and search engines
+            from one URL to another permanently.
+          </li>
+        </ul>
+
+        <p>
+          If an old page has permanently moved and should no longer be accessed
+          through its old URL, a redirect is usually more appropriate than
+          relying only on a canonical tag.
+        </p>
+
+        <h2>7. Common Canonical Tag Mistakes</h2>
+        <ul>
+          <li>Pointing the canonical tag to the wrong page.</li>
+          <li>Using a URL that does not exist or returns an error.</li>
+          <li>Pointing unrelated pages to the same canonical URL.</li>
+          <li>Using inconsistent canonical URLs in different SEO signals.</li>
+          <li>Assuming a canonical tag guarantees indexing.</li>
+          <li>
+            Accidentally using a development or testing URL as the canonical
+            URL.
+          </li>
+        </ul>
+
+        <h2>8. Canonical Tags and Your HTML Project</h2>
+        <p>
+          Bro, suppose your website has a service page that can be reached
+          through more than one URL. First, decide which URL should be the
+          preferred one. Then place the canonical tag inside that page's
+          <code>&lt;head&gt;</code> section.
+        </p>
+
+        <p>
+          Always use your own correct domain and the preferred page URL. Don't
+          copy an example domain into your real website.
+        </p>
+
+        <h2>9. Quick Revision</h2>
+        <ul>
+          <li>Canonical tags help identify a preferred URL.</li>
+          <li>They are useful for duplicate or very similar pages.</li>
+          <li>
+            They belong inside the HTML <code>&lt;head&gt;</code> section.
+          </li>
+          <li>They are hints, not guaranteed instructions.</li>
+          <li>Use redirects when a page has permanently moved.</li>
+        </ul>
+
+        <h2>10. Practice Task</h2>
+        <p>
+          Imagine your website has a product page accessible through these URLs:
+        </p>
+        <ul>
+          <li><code>/products/phone</code></li>
+          <li><code>/products/phone?source=home</code></li>
+          <li><code>/products/phone?campaign=offer</code></li>
+        </ul>
+
+        <p>Answer these questions:</p>
+        <ol>
+          <li>Which URL would you choose as the preferred URL?</li>
+          <li>
+            Where should you place the canonical tag in the HTML document?
+          </li>
+          <li>
+            Does a canonical tag guarantee that Google will index your preferred
+            URL?
+          </li>
+        </ol>
+
+        <button id="complete-lesson" type="button">Mark as Completed</button>
+
+        <nav class="lesson-navigation" aria-label="Lesson navigation">
+          <a href="robots-txt-xml-sitemaps.html">← Previous Lesson</a>
+          <a href="../index.html#lessons">All Lessons</a>
+          <a href="mobile-seo.html">Next Lesson →</a>
+        </nav>
+      </article>
+    </main>
+
+    <footer>
+      <p>Learn SEO. Practise SEO. Grow your skills.</p>
+    </footer>
+
+    <script src="../js/progress.js"></script>
+    <script>
+      const completeButton = document.getElementById("complete-lesson");
+      const lessonId = "canonical-tags";
+
+      if (isLessonCompleted(lessonId)) {
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      }
+
+      completeButton.addEventListener("click", function () {
+        markLessonCompleted(lessonId);
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      });
+    </script>
+  </body>
+</html>

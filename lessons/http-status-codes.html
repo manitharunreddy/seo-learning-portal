@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Learn HTTP status codes 200, 301, 302, 400, 403, 404, and 500, and understand their importance in technical SEO."
+    />
+
+    <title>HTTP Status Codes | SEO Zero to Hero</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="../index.html">SEO Zero to Hero</a>
+
+      <nav aria-label="Main navigation">
+        <a href="../index.html#lessons">Lessons</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <article id="lesson-content">
+        <p>LESSON 13</p>
+
+        <h1>HTTP Status Codes</h1>
+
+        <p>
+          Whenever you open a website, your browser sends an HTTP request to the
+          server. The server responds with a status code that indicates what
+          happened to that request.
+        </p>
+
+        <p>
+          HTTP status codes are important in technical SEO because they help us
+          understand whether pages are accessible, redirected, missing, or
+          experiencing server problems.
+        </p>
+
+        <h2>1. What Is an HTTP Status Code?</h2>
+
+        <p>
+          An HTTP status code is a three-digit number returned by a server to
+          describe the result of an HTTP request.
+        </p>
+
+        <p>For example:</p>
+
+        <ul>
+          <li><strong>200 OK:</strong> The request succeeded.</li>
+          <li>
+            <strong>301 Moved Permanently:</strong> The URL moved permanently.
+          </li>
+          <li>
+            <strong>302 Found:</strong> The URL is temporarily redirected.
+          </li>
+          <li>
+            <strong>404 Not Found:</strong> The requested resource was not
+            found.
+          </li>
+          <li>
+            <strong>500 Internal Server Error:</strong> The server encountered
+            an unexpected problem.
+          </li>
+        </ul>
+
+        <h2>2. HTTP Status Code Categories</h2>
+
+        <ul>
+          <li>
+            <strong>1xx — Informational:</strong>
+            The request is being processed.
+          </li>
+
+          <li>
+            <strong>2xx — Success:</strong>
+            The request was successfully received and processed.
+          </li>
+
+          <li>
+            <strong>3xx — Redirection:</strong>
+            The client needs to take further action, usually by following a
+            redirect.
+          </li>
+
+          <li>
+            <strong>4xx — Client Error:</strong>
+            There is a problem with the request.
+          </li>
+
+          <li>
+            <strong>5xx — Server Error:</strong>
+            The server failed to complete a valid request.
+          </li>
+        </ul>
+
+        <h2>3. Status Code 200 — OK</h2>
+
+        <p>A <strong>200 OK</strong> response means the request succeeded.</p>
+
+        <p>
+          Imagine a visitor opens our
+          <a href="what-is-seo.html">What Is SEO? lesson</a>. If the server
+          successfully returns the requested page, the response will normally
+          have a 200 status code.
+        </p>
+
+        <p><strong>SEO importance:</strong></p>
+
+        <ul>
+          <li>Confirms that the page was served successfully.</li>
+          <li>Helps search engines access the page content.</li>
+          <li>
+            Important pages intended for indexing should generally return a
+            successful response.
+          </li>
+        </ul>
+
+        <h2>4. Status Code 301 — Permanent Redirect</h2>
+
+        <p>
+          A <strong>301 Moved Permanently</strong> response indicates that a URL
+          has permanently moved to another URL.
+        </p>
+
+        <p>
+          For example, suppose an article moves from an old URL to a new URL. A
+          301 redirect can send visitors and search engines to the new
+          destination.
+        </p>
+
+        <p><strong>SEO importance:</strong></p>
+
+        <ul>
+          <li>Helps search engines understand permanent URL changes.</li>
+          <li>
+            Can consolidate relevant ranking signals toward the destination.
+          </li>
+          <li>
+            Internal links should be updated to point directly to the new URL.
+          </li>
+        </ul>
+
+        <p>
+          Use a 301 redirect when the move is permanent and a suitable
+          destination exists.
+        </p>
+
+        <h2>5. Status Code 302 — Temporary Redirect</h2>
+
+        <p>
+          A <strong>302 Found</strong> response indicates a temporary
+          redirection.
+        </p>
+
+        <p>
+          For example, a website might temporarily redirect visitors while a
+          page is undergoing maintenance.
+        </p>
+
+        <p>
+          <strong>SEO importance:</strong>
+          Search engines may treat temporary redirects differently from
+          permanent redirects. Choose the status code that matches your actual
+          intention.
+        </p>
+
+        <h2>6. Status Code 400 — Bad Request</h2>
+
+        <p>
+          A <strong>400 Bad Request</strong> response means the server cannot
+          process the request because it considers the request invalid.
+        </p>
+
+        <p>
+          This may happen when a request contains malformed data or invalid
+          syntax.
+        </p>
+
+        <p>
+          <strong>SEO importance:</strong>
+          If search engine crawlers receive 400 errors when requesting important
+          pages, investigate the requests and server configuration.
+        </p>
+
+        <h2>7. Status Code 403 — Forbidden</h2>
+
+        <p>
+          A <strong>403 Forbidden</strong> response means the server understood
+          the request but refused access.
+        </p>
+
+        <p>
+          For example, a server may block access because the requester does not
+          have permission to view a resource.
+        </p>
+
+        <p>
+          <strong>SEO importance:</strong>
+          If public pages that should be accessible to search engines return
+          403, check permissions, security rules, and firewall settings.
+        </p>
+
+        <h2>8. Status Code 404 — Not Found</h2>
+
+        <p>
+          A <strong>404 Not Found</strong> response means the requested resource
+          could not be found.
+        </p>
+
+        <p>
+          Imagine a lesson file is renamed, but another page still links to the
+          old filename. The old link may return a 404 error.
+        </p>
+
+        <p><strong>SEO importance:</strong></p>
+
+        <ul>
+          <li>Fix internal links that point to missing pages.</li>
+          <li>Restore pages that were deleted accidentally.</li>
+          <li>Redirect a moved page when a relevant replacement exists.</li>
+          <li>
+            Allow genuinely removed pages to return 404 when there is no
+            suitable replacement.
+          </li>
+        </ul>
+
+        <p>
+          A 404 response is not automatically an SEO problem. Search engines
+          expect some URLs to be missing. The important thing is to handle them
+          correctly.
+        </p>
+
+        <h2>9. Status Code 500 — Internal Server Error</h2>
+
+        <p>
+          A <strong>500 Internal Server Error</strong> response means the server
+          encountered an unexpected condition and could not complete the
+          request.
+        </p>
+
+        <p>Possible causes include:</p>
+
+        <ul>
+          <li>Application exceptions.</li>
+          <li>Server configuration problems.</li>
+          <li>Unexpected failures while processing a request.</li>
+        </ul>
+
+        <p><strong>SEO importance:</strong></p>
+
+        <ul>
+          <li>Investigate server and application logs.</li>
+          <li>Fix errors that prevent important pages from loading.</li>
+          <li>Monitor whether the problem happens repeatedly.</li>
+          <li>Verify the status code after fixing the issue.</li>
+        </ul>
+
+        <h2>10. Quick Comparison</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Status Code</th>
+              <th>Meaning</th>
+              <th>Typical Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>200</td>
+              <td>OK</td>
+              <td>Confirm the page content is correct.</td>
+            </tr>
+
+            <tr>
+              <td>301</td>
+              <td>Permanent Redirect</td>
+              <td>Update internal links to the final URL.</td>
+            </tr>
+
+            <tr>
+              <td>302</td>
+              <td>Temporary Redirect</td>
+              <td>Confirm the redirect is temporary.</td>
+            </tr>
+
+            <tr>
+              <td>400</td>
+              <td>Bad Request</td>
+              <td>Investigate invalid requests.</td>
+            </tr>
+
+            <tr>
+              <td>403</td>
+              <td>Forbidden</td>
+              <td>Check access rules and permissions.</td>
+            </tr>
+
+            <tr>
+              <td>404</td>
+              <td>Not Found</td>
+              <td>Fix broken links where appropriate.</td>
+            </tr>
+
+            <tr>
+              <td>500</td>
+              <td>Internal Server Error</td>
+              <td>Investigate server and application logs.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>11. How to Check an HTTP Status Code</h2>
+
+        <p>
+          You can check a page's HTTP status code using your browser's Developer
+          Tools.
+        </p>
+
+        <ol>
+          <li>Open the page you want to inspect.</li>
+          <li>Press <strong>F12</strong> to open Developer Tools.</li>
+          <li>Select the <strong>Network</strong> tab.</li>
+          <li>Reload the page.</li>
+          <li>Select the main document request.</li>
+          <li>Look for the HTTP status code in the request details.</li>
+        </ol>
+
+        <p>
+          You can also use Google Search Console to investigate indexing
+          problems and inspect how Google accesses a URL.
+        </p>
+
+        <h2>12. Practical Example Using Our Website</h2>
+
+        <p>
+          Imagine you open our
+          <a href="seo-friendly-urls.html">SEO-Friendly URLs lesson</a>.
+        </p>
+
+        <ul>
+          <li>If the page loads successfully, it will normally return 200.</li>
+          <li>If the page permanently moves, the old URL can return 301.</li>
+          <li>
+            If the page has been removed without a replacement, it can return
+            404.
+          </li>
+          <li>
+            If the server encounters an unexpected failure, it may return 500.
+          </li>
+        </ul>
+
+        <p>
+          As an SEO developer, your job is to identify unexpected status codes
+          and fix the underlying problems.
+        </p>
+
+        <h2>13. Lesson Takeaway</h2>
+
+        <p>
+          HTTP status codes tell browsers and search engines what happened when
+          a URL was requested. Understanding these codes helps you diagnose
+          crawling, accessibility, redirection, and server problems.
+        </p>
+
+        <p>
+          Always investigate unexpected status codes instead of assuming every
+          error requires the same solution.
+        </p>
+
+        <button id="complete-lesson" type="button">Mark as Completed</button>
+
+        <nav class="lesson-navigation" aria-label="Lesson navigation">
+          <a href="internal-linking.html">← Previous Lesson</a>
+          <a href="../index.html#lessons">All Lessons</a>
+          <a href="robots-txt-xml-sitemaps.html">Next Lesson →</a>
+        </nav>
+      </article>
+    </main>
+
+    <footer>
+      <p>Learn SEO. Practise SEO. Grow your skills.</p>
+    </footer>
+
+    <script src="../js/progress.js"></script>
+
+    <script>
+      const completeButton = document.getElementById("complete-lesson");
+      const lessonId = "http-status-codes";
+
+      if (isLessonCompleted(lessonId)) {
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      }
+
+      completeButton.addEventListener("click", function () {
+        markLessonCompleted(lessonId);
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      });
+    </script>
+  </body>
+</html>

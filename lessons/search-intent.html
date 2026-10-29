@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Learn the four main types of search intent: informational, navigational, commercial, and transactional, with practical SEO examples."
+    />
+
+    <title>Search Intent Explained | SEO Zero to Hero</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- Shared website navigation. -->
+    <header>
+      <a href="../index.html">SEO Zero to Hero</a>
+
+      <nav aria-label="Main navigation">
+        <a href="../index.html#lessons">Lessons</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+    </header>
+
+    <!-- Main lesson content. -->
+    <main>
+      <article id="lesson-content">
+        <p>LESSON 06</p>
+
+        <h1>What Is Search Intent?</h1>
+
+        <p>
+          Search intent means the reason behind a person's search. It helps us
+          understand what information or action the searcher expects from a
+          page.
+        </p>
+
+        <h2>1. Informational Intent</h2>
+
+        <p>The user wants to learn something or find an answer.</p>
+
+        <p><strong>Examples:</strong></p>
+
+        <ul>
+          <li>What is SEO?</li>
+          <li>How do search engines work?</li>
+          <li>How to improve website speed?</li>
+        </ul>
+
+        <p>
+          <strong>Content idea:</strong> Create tutorials, guides, explanations,
+          and helpful articles.
+        </p>
+
+        <h2>2. Navigational Intent</h2>
+
+        <p>The user wants to reach a particular website or page.</p>
+
+        <p><strong>Examples:</strong></p>
+
+        <ul>
+          <li>Google Search Console login</li>
+          <li>YouTube website</li>
+          <li>OpenAI official website</li>
+        </ul>
+
+        <p>
+          <strong>Content idea:</strong> Make your website name and important
+          pages clear and easy to find.
+        </p>
+
+        <h2>3. Commercial Investigation</h2>
+
+        <p>
+          The user is researching options before making a purchase or choosing a
+          service.
+        </p>
+
+        <p><strong>Examples:</strong></p>
+
+        <ul>
+          <li>Best SEO tools for beginners</li>
+          <li>Petrol bunk software comparison</li>
+          <li>Best website hosting providers</li>
+        </ul>
+
+        <p>
+          <strong>Content idea:</strong> Publish comparisons, detailed reviews,
+          feature breakdowns, and buying guides.
+        </p>
+
+        <h2>4. Transactional Intent</h2>
+
+        <p>
+          The user wants to complete an action, such as buying a product,
+          registering, or subscribing.
+        </p>
+
+        <p><strong>Examples:</strong></p>
+
+        <ul>
+          <li>Buy SEO software</li>
+          <li>Purchase website hosting</li>
+          <li>Register for an SEO course</li>
+        </ul>
+
+        <p>
+          <strong>Content idea:</strong> Provide clear pricing, product details,
+          and a straightforward purchase or registration process.
+        </p>
+
+        <h2>How to Identify Search Intent</h2>
+
+        <ol>
+          <li>Write down the keyword you want to target.</li>
+          <li>Search for that keyword on Google.</li>
+          <li>Examine the types of pages appearing in the results.</li>
+          <li>Identify what those pages help users accomplish.</li>
+          <li>Create content that satisfies the same need.</li>
+        </ol>
+
+        <h2>Real-Time Example</h2>
+
+        <p>Consider these searches for petrol bunk software:</p>
+
+        <ul>
+          <li>
+            <strong>"What is petrol bunk software?"</strong>
+            — Informational intent.
+          </li>
+          <li>
+            <strong>"Best petrol bunk software"</strong>
+            — Commercial investigation.
+          </li>
+          <li>
+            <strong>"Petrol bunk software pricing"</strong>
+            — Often commercial investigation, depending on the results.
+          </li>
+          <li>
+            <strong>"Buy petrol bunk software"</strong>
+            — Transactional intent.
+          </li>
+        </ul>
+
+        <p>
+          Search intent is not always perfectly clear from the keyword alone.
+          Check the actual search results to understand what users are looking
+          for.
+        </p>
+
+        <h2>Key Takeaway</h2>
+
+        <p>
+          Before creating a page, understand the searcher's goal. Matching your
+          content to that goal helps users find the information or solution they
+          need.
+        </p>
+
+        <!-- Marks this lesson as completed. -->
+        <button id="complete-lesson" type="button">Mark as Completed</button>
+
+        <!-- Navigation between course lessons. -->
+        <nav class="lesson-navigation" aria-label="Lesson navigation">
+          <a href="keyword-research.html"> &larr; Previous Lesson </a>
+
+          <a href="../index.html#lessons">All Lessons</a>
+
+          <a href="long-tail-keywords.html"> Next Lesson &rarr; </a>
+        </nav>
+      </article>
+    </main>
+
+    <!-- Shared website footer. -->
+    <footer>
+      <p>Learn SEO. Practise SEO. Grow your skills.</p>
+    </footer>
+
+    <!-- Loads lesson progress functions. -->
+    <script src="../js/progress.js"></script>
+
+    <script>
+      const completeButton = document.getElementById("complete-lesson");
+      const lessonId = "search-intent";
+
+      // Restores the saved completion state.
+      if (isLessonCompleted(lessonId)) {
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      }
+
+      // Saves progress when the lesson is completed.
+      completeButton.addEventListener("click", function () {
+        markLessonCompleted(lessonId);
+
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      });
+    </script>
+  </body>
+</html>

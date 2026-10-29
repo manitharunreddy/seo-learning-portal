@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Learn how search engines discover, crawl, index, and serve web pages with beginner-friendly examples."
+    />
+
+    <title>How Search Engines Work | SEO Zero to Hero</title>
+
+    <!-- Reuses the shared course stylesheet. -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Shared website navigation. -->
+    <header>
+      <a href="../index.html">SEO Zero to Hero</a>
+
+      <nav aria-label="Main navigation">
+        <a href="../index.html#lessons">Lessons</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+    </header>
+
+    <!-- Lesson content. -->
+    <main>
+      <article id="lesson-content">
+        <p>LESSON 02</p>
+
+        <h1>How Do Search Engines Work?</h1>
+
+        <p>
+          Search engines help people find useful information across billions of
+          web pages. They use automated systems to discover content, understand
+          it, and present relevant results.
+        </p>
+
+        <h2>1. Crawling</h2>
+
+        <p>
+          Search engine crawlers discover URLs and retrieve accessible page
+          content. They can discover pages through links and sitemaps.
+        </p>
+
+        <p>
+          Example: Googlebot discovers a link to your website and requests that
+          page.
+        </p>
+
+        <h2>2. Indexing</h2>
+
+        <p>
+          Search engines analyze the content they discover and may store
+          information about it in their index. Not every crawled page is
+          guaranteed to be indexed.
+        </p>
+
+        <p>
+          Example: A search engine analyzes your page title, text, images, and
+          other available information.
+        </p>
+
+        <h2>3. Serving Search Results</h2>
+
+        <p>
+          When someone searches, the search engine selects and orders results it
+          considers relevant to the query. Many factors influence which pages
+          appear and where they appear.
+        </p>
+
+        <p>
+          Example: Someone searches for "petrol bunk management software". A
+          useful, relevant page may be considered for those search results, but
+          ranking is never guaranteed.
+        </p>
+
+        <h2>Important SEO Tip</h2>
+
+        <p>
+          Make important pages accessible, provide useful content, use
+          descriptive page titles, and create clear internal links. These
+          practices help search engines discover and understand your website.
+        </p>
+        <!-- Allows learners to mark this lesson as completed. -->
+        <button id="complete-lesson" type="button">Mark as Completed</button>
+        <!-- Navigation between course lessons. -->
+        <nav class="lesson-navigation" aria-label="Lesson navigation">
+          <a href="what-is-seo.html">&larr; Previous Lesson</a>
+          <a href="../index.html#lessons">All Lessons</a>
+          <a href="types-of-seo.html">Next Lesson &rarr;</a>
+        </nav>
+      </article>
+    </main>
+
+    <!-- Shared website footer. -->
+    <footer>
+      <p>Learn SEO. Practise SEO. Grow your skills.</p>
+    </footer>
+
+    <!-- Loads the lesson progress functions. -->
+    <script src="../js/progress.js"></script>
+
+    <script>
+      const completeButton = document.getElementById("complete-lesson");
+      const lessonId = "how-search-engines-work";
+
+      // Restores the saved completion state.
+      if (isLessonCompleted(lessonId)) {
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      }
+
+      // Saves progress when the lesson is completed.
+      completeButton.addEventListener("click", function () {
+        markLessonCompleted(lessonId);
+
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      });
+    </script>
+  </body>
+</html>

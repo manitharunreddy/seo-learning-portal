@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Learn the main types of SEO, including on-page SEO, off-page SEO, technical SEO, and local SEO, with practical examples."
+    />
+
+    <title>Types of SEO | SEO Zero to Hero</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- Shared website navigation. -->
+    <header>
+      <a href="../index.html">SEO Zero to Hero</a>
+
+      <nav aria-label="Main navigation">
+        <a href="../index.html#lessons">Lessons</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+    </header>
+
+    <!-- Main lesson content. -->
+    <main>
+      <article id="lesson-content">
+        <p>LESSON 03</p>
+
+        <h1>What Are the Different Types of SEO?</h1>
+
+        <p>
+          SEO has different areas that work together to improve a website's
+          visibility in organic search results. Understanding these areas helps
+          you identify what a website needs to improve.
+        </p>
+
+        <h2>1. On-Page SEO</h2>
+
+        <p>
+          On-page SEO means improving the content and HTML elements of
+          individual web pages.
+        </p>
+
+        <p><strong>Examples:</strong></p>
+
+        <ul>
+          <li>Writing descriptive page titles.</li>
+          <li>Creating useful meta descriptions.</li>
+          <li>Organizing content with proper headings.</li>
+          <li>Adding relevant internal links.</li>
+          <li>Writing helpful, original content.</li>
+        </ul>
+
+        <p>
+          <strong>Real-time example:</strong> If you have a petrol bunk software
+          website, create a useful page explaining your billing, inventory, and
+          sales reporting features.
+        </p>
+
+        <h2>2. Off-Page SEO</h2>
+
+        <p>
+          Off-page SEO involves activities outside your website that can help
+          build its reputation and authority.
+        </p>
+
+        <p><strong>Examples:</strong></p>
+
+        <ul>
+          <li>Getting relevant backlinks from trustworthy websites.</li>
+          <li>Publishing useful content that others want to reference.</li>
+          <li>Building genuine industry relationships.</li>
+        </ul>
+
+        <p>
+          <strong>Real-time example:</strong> An industry website references
+          your software guide and links to your website. That link can help
+          people discover your content.
+        </p>
+
+        <h2>3. Technical SEO</h2>
+
+        <p>
+          Technical SEO focuses on making your website accessible,
+          understandable, and technically sound for search engines.
+        </p>
+
+        <p><strong>Examples:</strong></p>
+
+        <ul>
+          <li>Improving page loading performance.</li>
+          <li>Creating an XML sitemap.</li>
+          <li>Configuring robots.txt correctly.</li>
+          <li>Using HTTPS.</li>
+          <li>Fixing broken links and unwanted 404 errors.</li>
+          <li>Making pages mobile-friendly.</li>
+        </ul>
+
+        <p>
+          <strong>Real-time example:</strong> If an important page returns a 404
+          error, users and search engines may not be able to access the intended
+          content.
+        </p>
+
+        <h2>4. Local SEO</h2>
+
+        <p>
+          Local SEO helps businesses improve their visibility for searches
+          related to a particular location.
+        </p>
+
+        <p><strong>Examples:</strong></p>
+
+        <ul>
+          <li>Maintaining an accurate Google Business Profile.</li>
+          <li>Keeping business name, address, and phone details consistent.</li>
+          <li>Collecting genuine customer reviews.</li>
+          <li>Creating useful location-specific website pages.</li>
+        </ul>
+
+        <p>
+          <strong>Real-time example:</strong> A person searches for "software
+          companies near me". Accurate business information can help a relevant
+          local business appear in search results.
+        </p>
+
+        <h2>How Do These SEO Types Work Together?</h2>
+
+        <p>Imagine launching a new business website:</p>
+
+        <ul>
+          <li><strong>On-page SEO:</strong> Explain your products clearly.</li>
+          <li>
+            <strong>Off-page SEO:</strong> Earn relevant, genuine backlinks.
+          </li>
+          <li>
+            <strong>Technical SEO:</strong> Make important pages accessible.
+          </li>
+          <li>
+            <strong>Local SEO:</strong> Help nearby customers discover your
+            business.
+          </li>
+        </ul>
+
+        <h2>Key Takeaway</h2>
+
+        <p>
+          These SEO areas complement one another. Start with useful content and
+          a technically accessible website, then improve your site's reputation
+          and local visibility where relevant. No SEO technique guarantees a
+          particular ranking.
+        </p>
+
+        <!-- Marks this lesson as completed. -->
+        <button id="complete-lesson" type="button">Mark as Completed</button>
+
+        <!-- Navigation between course lessons. -->
+        <nav class="lesson-navigation" aria-label="Lesson navigation">
+          <a href="how-search-engines-work.html"> &larr; Previous Lesson </a>
+
+          <a href="../index.html#lessons">All Lessons</a>
+
+          <a href="how-google-finds-websites.html"> Next Lesson &rarr; </a>
+        </nav>
+      </article>
+    </main>
+
+    <!-- Shared website footer. -->
+    <footer>
+      <p>Learn SEO. Practise SEO. Grow your skills.</p>
+    </footer>
+
+    <!-- Loads lesson progress functions. -->
+    <script src="../js/progress.js"></script>
+
+    <script>
+      const completeButton = document.getElementById("complete-lesson");
+      const lessonId = "types-of-seo";
+
+      // Restores the saved completion state.
+      if (isLessonCompleted(lessonId)) {
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      }
+
+      // Saves progress when the lesson is completed.
+      completeButton.addEventListener("click", function () {
+        markLessonCompleted(lessonId);
+
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      });
+    </script>
+  </body>
+</html>

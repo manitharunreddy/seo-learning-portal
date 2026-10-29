@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Learn robots.txt and XML sitemaps, understand their differences, and discover how they help search engines crawl and discover website pages."
+    />
+
+    <title>Robots.txt and XML Sitemaps | SEO Zero to Hero</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="../index.html">SEO Zero to Hero</a>
+
+      <nav aria-label="Main navigation">
+        <a href="../index.html#lessons">Lessons</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <article id="lesson-content">
+        <p>LESSON 14</p>
+
+        <h1>Robots.txt and XML Sitemaps</h1>
+
+        <p>
+          Search engines need to discover your website pages and access their
+          content to understand them. Two important technical SEO concepts are
+          <strong>robots.txt</strong> and <strong>XML sitemaps</strong>.
+        </p>
+
+        <p>
+          Although they work differently, both can help you manage how search
+          engines interact with your website.
+        </p>
+
+        <h2>1. What Is robots.txt?</h2>
+
+        <p>
+          A <code>robots.txt</code> file gives instructions to compliant search
+          engine crawlers about which URL paths they may or may not crawl on a
+          website.
+        </p>
+
+        <p>It is usually located at the root of a website.</p>
+
+        <p><strong>Example location:</strong></p>
+
+        <pre><code>https://example.com/robots.txt</code></pre>
+
+        <p>
+          The address above is only an illustrative example, not a link to a
+          page in your project.
+        </p>
+
+        <h2>2. Example of a robots.txt File</h2>
+
+        <p>
+          Imagine you want to allow search engine crawlers to access your
+          website.
+        </p>
+
+        <pre><code>User-agent: *
+Allow: /</code></pre>
+
+        <p>Here's what the instructions mean:</p>
+
+        <ul>
+          <li>
+            <strong>User-agent: *</strong>
+            applies the rule to all crawlers that follow these rules.
+          </li>
+
+          <li>
+            <strong>Allow: /</strong>
+            allows crawling of URLs on the website, subject to other applicable
+            rules and restrictions.
+          </li>
+        </ul>
+
+        <p>
+          This is a simple example. Real websites may need different rules
+          depending on their structure and requirements.
+        </p>
+
+        <h2>3. Blocking a Directory with robots.txt</h2>
+
+        <p>
+          Suppose a website has a directory containing internal application
+          resources that should not be crawled.
+        </p>
+
+        <p>An illustrative rule might look like this:</p>
+
+        <pre><code>User-agent: *
+Disallow: /private-area/</code></pre>
+
+        <p>
+          This asks compliant crawlers not to crawl URLs matching that path.
+        </p>
+
+        <p>
+          <strong>Important:</strong> Do not copy this rule into your SEO
+          learning website without a specific reason. It is only an example of
+          how the directive works.
+        </p>
+
+        <h2>4. What robots.txt Cannot Do</h2>
+
+        <ul>
+          <li>
+            <strong>It is not access control:</strong>
+            It does not protect private files or prevent unauthorized visitors
+            from accessing them.
+          </li>
+
+          <li>
+            <strong>It does not guarantee deindexing:</strong>
+            A blocked URL may still appear in search results if discovered
+            through other sources.
+          </li>
+
+          <li>
+            <strong>It does not force every crawler to obey:</strong>
+            Malicious crawlers may ignore its instructions.
+          </li>
+
+          <li>
+            <strong>It does not guarantee indexing:</strong>
+            Allowing a crawler to access a page does not mean that the page will
+            appear in search results.
+          </li>
+        </ul>
+
+        <p>
+          If a page contains confidential information, use proper authentication
+          and authorization rather than relying on robots.txt.
+        </p>
+
+        <h2>5. What Is an XML Sitemap?</h2>
+
+        <p>
+          An XML sitemap is a file that lists important URLs on a website to
+          help search engines discover them.
+        </p>
+
+        <p>
+          It is particularly useful for large websites, websites with many
+          pages, and pages that are not easily discovered through internal
+          links.
+        </p>
+
+        <p>
+          A sitemap commonly uses the XML format and may be named
+          <code>sitemap.xml</code>.
+        </p>
+
+        <h2>6. Example of an XML Sitemap</h2>
+
+        <p>Here's a simplified sitemap example:</p>
+
+        <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+
+  &lt;url&gt;
+    &lt;loc&gt;https://example.com/&lt;/loc&gt;
+  &lt;/url&gt;
+
+  &lt;url&gt;
+    &lt;loc&gt;https://example.com/about/&lt;/loc&gt;
+  &lt;/url&gt;
+
+&lt;/urlset&gt;</code></pre>
+
+        <p>
+          The URLs above are illustrative examples, not actual pages in your
+          project.
+        </p>
+
+        <h3>Understanding the XML Elements</h3>
+
+        <ul>
+          <li>
+            <strong>&lt;urlset&gt;:</strong>
+            The root element containing the URL entries.
+          </li>
+
+          <li>
+            <strong>&lt;url&gt;:</strong>
+            Represents one URL entry.
+          </li>
+
+          <li>
+            <strong>&lt;loc&gt;:</strong>
+            Contains the absolute URL of the page.
+          </li>
+        </ul>
+
+        <p>
+          A sitemap may include additional information, but optional fields
+          should only be used when they are accurate and useful.
+        </p>
+
+        <h2>7. robots.txt vs XML Sitemap</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>robots.txt</th>
+              <th>XML Sitemap</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Main purpose</td>
+              <td>Provides crawling instructions</td>
+              <td>Lists URLs for discovery</td>
+            </tr>
+
+            <tr>
+              <td>Typical filename</td>
+              <td>robots.txt</td>
+              <td>sitemap.xml</td>
+            </tr>
+
+            <tr>
+              <td>Common location</td>
+              <td>Website root</td>
+              <td>Website root or another permitted location</td>
+            </tr>
+
+            <tr>
+              <td>Blocks crawling?</td>
+              <td>Can request that crawlers avoid matching paths</td>
+              <td>No</td>
+            </tr>
+
+            <tr>
+              <td>Helps discover URLs?</td>
+              <td>Not its primary purpose</td>
+              <td>Yes</td>
+            </tr>
+
+            <tr>
+              <td>Guarantees indexing?</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>8. How Do Search Engines Use Them Together?</h2>
+
+        <p>Imagine your website contains many useful pages.</p>
+
+        <ol>
+          <li>The search engine discovers your website.</li>
+
+          <li>It checks robots.txt for applicable crawling instructions.</li>
+
+          <li>
+            It may discover URLs through internal links and an XML sitemap.
+          </li>
+
+          <li>
+            If crawling is permitted, it can request a page and process its
+            content.
+          </li>
+
+          <li>
+            The search engine decides whether the page should be indexed and how
+            it should appear in search results.
+          </li>
+        </ol>
+
+        <p>
+          Remember that crawling, indexing, and ranking are different processes.
+          Neither robots.txt nor a sitemap guarantees that a page will be
+          indexed or rank highly.
+        </p>
+
+        <h2>9. Common SEO Mistakes</h2>
+
+        <ul>
+          <li>Blocking important pages accidentally in robots.txt.</li>
+
+          <li>Assuming robots.txt protects confidential information.</li>
+
+          <li>Listing incorrect or nonexistent URLs in a sitemap.</li>
+
+          <li>
+            Including URLs that redirect or return errors instead of their
+            intended final pages.
+          </li>
+
+          <li>Forgetting to update the sitemap when important URLs change.</li>
+
+          <li>Assuming that submitting a sitemap guarantees indexing.</li>
+
+          <li>
+            Using robots.txt when the actual requirement is to prevent a page
+            from appearing in search results.
+          </li>
+        </ul>
+
+        <h2>10. Practical Example for Our SEO Learning Website</h2>
+
+        <p>Our project contains lesson pages such as:</p>
+
+        <ul>
+          <li>
+            <a href="what-is-seo.html">What Is SEO?</a>
+          </li>
+
+          <li>
+            <a href="keyword-research.html">Keyword Research</a>
+          </li>
+
+          <li>
+            <a href="internal-linking.html">Internal Linking</a>
+          </li>
+
+          <li>
+            <a href="http-status-codes.html">HTTP Status Codes</a>
+          </li>
+        </ul>
+
+        <p>
+          These are existing lesson filenames in our project plan. Because this
+          lesson is also inside the <code>lessons</code>
+          folder, the relative links use the filenames directly.
+        </p>
+
+        <p>
+          If you later publish the project on a real domain, you can create an
+          XML sitemap containing the absolute URLs of your published pages.
+        </p>
+
+        <p>
+          You can also publish a robots.txt file at the root of the deployed
+          website and configure its rules according to your actual crawling
+          requirements.
+        </p>
+
+        <p>
+          Do not place a robots.txt file inside the lessons folder and expect it
+          to control the entire website. The file normally needs to be available
+          at the website root.
+        </p>
+
+        <h2>11. Lesson Takeaway</h2>
+
+        <p>
+          robots.txt provides crawling instructions to compliant crawlers, while
+          an XML sitemap helps search engines discover important URLs.
+        </p>
+
+        <p>
+          Use both correctly, keep your sitemap accurate, and make sure
+          important pages are connected through relevant internal links.
+        </p>
+
+        <button id="complete-lesson" type="button">Mark as Completed</button>
+
+        <nav class="lesson-navigation" aria-label="Lesson navigation">
+          <a href="http-status-codes.html">← Previous Lesson</a>
+          <a href="../index.html#lessons">All Lessons</a>
+          <a href="canonical-tags.html">Next Lesson →</a>
+        </nav>
+      </article>
+    </main>
+
+    <footer>
+      <p>Learn SEO. Practise SEO. Grow your skills.</p>
+    </footer>
+
+    <script src="../js/progress.js"></script>
+
+    <script>
+      const completeButton = document.getElementById("complete-lesson");
+      const lessonId = "robots-txt-xml-sitemaps";
+
+      if (isLessonCompleted(lessonId)) {
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      }
+
+      completeButton.addEventListener("click", function () {
+        markLessonCompleted(lessonId);
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      });
+    </script>
+  </body>
+</html>

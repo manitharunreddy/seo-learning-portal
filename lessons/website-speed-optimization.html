@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn website speed optimization, including caching, image compression, JavaScript optimization, CSS optimization, and server response times."
+    />
+    <title>Website Speed Optimization | SEO Zero to Hero</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">SEO Zero to Hero</a>
+      <nav aria-label="Main navigation">
+        <a href="../index.html#lessons">Lessons</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <article id="lesson-content">
+        <p>LESSON 19</p>
+        <h1>Website Speed Optimization</h1>
+
+        <p>
+          Bro, imagine opening a website and waiting five seconds for it to
+          load. Most users want to access information quickly. Website speed
+          optimization focuses on reducing unnecessary loading time and making
+          pages respond efficiently.
+        </p>
+
+        <h2>1. What Is Website Speed Optimization?</h2>
+        <p>
+          Website speed optimization is the process of improving how quickly a
+          website loads, displays content, and responds to user interactions.
+        </p>
+
+        <p>
+          <strong>Simple definition:</strong> It means making your website
+          faster and more efficient for visitors.
+        </p>
+
+        <h2>2. Why Does Website Speed Matter?</h2>
+        <ul>
+          <li>Users can access content sooner.</li>
+          <li>Pages may feel more responsive.</li>
+          <li>Visitors may be less likely to leave because of slow loading.</li>
+          <li>Fast pages can improve the overall user experience.</li>
+          <li>
+            Performance metrics contribute to Google's page experience signals.
+          </li>
+        </ul>
+
+        <p>
+          Remember, bro: a fast website does not automatically rank first on
+          Google. Content relevance, quality, and many other factors also
+          matter.
+        </p>
+
+        <h2>3. Understand the Main Performance Problems</h2>
+
+        <h3>Large Images</h3>
+        <p>
+          Large images contain more data that the browser needs to download.
+          Resize images to suitable dimensions and compress them before
+          uploading.
+        </p>
+
+        <p>Example:</p>
+        <pre><code>&lt;img
+  src="../assets/product.jpg"
+  alt="Product displayed on a table"
+  width="800"
+  height="600"
+&gt;</code></pre>
+
+        <p>
+          Use an image file that actually exists in your project and specify
+          appropriate dimensions for that image.
+        </p>
+
+        <h3>Too Much JavaScript</h3>
+        <p>
+          Large JavaScript bundles and long-running tasks can delay rendering
+          and make interactions less responsive.
+        </p>
+
+        <p>Possible improvements:</p>
+        <ul>
+          <li>Remove unused JavaScript.</li>
+          <li>Load scripts only where they are needed.</li>
+          <li>Split large bundles when appropriate.</li>
+          <li>Defer non-critical scripts.</li>
+          <li>Break up long-running tasks.</li>
+        </ul>
+
+        <h3>Unoptimized CSS</h3>
+        <p>
+          Unnecessary CSS can increase download and processing work. Remove
+          unused rules and avoid loading stylesheets that a page does not need.
+        </p>
+
+        <h3>Slow Server Response</h3>
+        <p>
+          When the server takes too long to respond, the browser must wait
+          before it can receive the requested HTML or data.
+        </p>
+
+        <p>Common causes include:</p>
+        <ul>
+          <li>Slow database queries.</li>
+          <li>Insufficient server resources.</li>
+          <li>Heavy backend processing.</li>
+          <li>Network latency.</li>
+          <li>Missing or ineffective caching.</li>
+        </ul>
+
+        <h2>4. Browser Caching</h2>
+        <p>
+          Caching allows browsers to reuse previously downloaded resources
+          instead of downloading them again whenever the user visits another
+          page.
+        </p>
+
+        <p>
+          For example, your CSS file and logo may remain cached in the browser.
+          When the user returns, those resources may load without another full
+          download.
+        </p>
+
+        <p>
+          Static resources such as images, CSS, and JavaScript can often benefit
+          from appropriate cache headers.
+        </p>
+
+        <p>
+          <strong>Important:</strong> When you update a cached file, use proper
+          cache invalidation or versioned filenames so visitors can receive the
+          latest version.
+        </p>
+
+        <h2>5. Minification</h2>
+        <p>
+          Minification removes unnecessary characters from CSS and JavaScript
+          files without changing their intended behavior.
+        </p>
+
+        <p>Readable CSS:</p>
+        <pre><code>body {
+  margin: 0;
+  padding: 0;
+}</code></pre>
+
+        <p>Minified CSS:</p>
+        <pre><code>body{margin:0;padding:0}</code></pre>
+
+        <p>
+          Minification can reduce file size. Modern build tools can perform this
+          automatically during production builds.
+        </p>
+
+        <h2>6. Gzip and Brotli Compression</h2>
+        <p>
+          HTTP compression reduces the size of supported text-based responses
+          before they are transferred over the network.
+        </p>
+
+        <ul>
+          <li><strong>Gzip:</strong> A widely supported compression method.</li>
+          <li>
+            <strong>Brotli:</strong> Another compression method that can produce
+            smaller text responses in many situations.
+          </li>
+        </ul>
+
+        <p>
+          Your web server or hosting platform can enable compression for
+          suitable responses. Images that are already efficiently compressed may
+          not benefit much from additional HTTP compression.
+        </p>
+
+        <h2>7. Use a Content Delivery Network (CDN)</h2>
+        <p>
+          A CDN distributes copies of eligible content across multiple servers.
+          Visitors can often receive cached resources from a location closer to
+          them.
+        </p>
+
+        <p>A CDN can help with:</p>
+        <ul>
+          <li>Delivering static resources.</li>
+          <li>Reducing latency for distant visitors.</li>
+          <li>Handling traffic more efficiently.</li>
+          <li>
+            Reducing repeated requests to the origin server when caching is
+            configured correctly.
+          </li>
+        </ul>
+
+        <p>
+          A CDN does not automatically fix slow database queries or inefficient
+          backend code.
+        </p>
+
+        <h2>8. Reduce HTTP Requests</h2>
+        <p>
+          Each resource a page needs may require a network request, although
+          browsers can reuse connections and load multiple resources
+          concurrently.
+        </p>
+
+        <p>You can reduce unnecessary requests by:</p>
+        <ul>
+          <li>Removing unused images and scripts.</li>
+          <li>Avoiding unnecessary third-party resources.</li>
+          <li>Combining resources when it makes sense for your build setup.</li>
+          <li>Using suitable image formats and responsive images.</li>
+        </ul>
+
+        <p>
+          Don't combine every file blindly. Modern browsers and build tools can
+          handle multiple resources efficiently, so measure performance before
+          making changes.
+        </p>
+
+        <h2>9. Optimize the Critical Rendering Path</h2>
+        <p>
+          The browser needs to download and process important resources before
+          displaying the page. Some CSS and JavaScript can delay the first
+          render.
+        </p>
+
+        <p>Helpful practices include:</p>
+        <ul>
+          <li>Keep critical CSS efficient.</li>
+          <li>Defer JavaScript that is not needed immediately.</li>
+          <li>Avoid loading unnecessary resources in the page head.</li>
+          <li>Prioritize important above-the-fold content.</li>
+          <li>Use resource hints only when they provide a real benefit.</li>
+        </ul>
+
+        <h2>10. Measure Before and After Optimization</h2>
+        <p>
+          Bro, don't optimize based only on assumptions. Measure the page first,
+          identify the bottleneck, make one change, and measure again.
+        </p>
+
+        <p>Check these areas:</p>
+        <ul>
+          <li>Initial document response time.</li>
+          <li>Image and script file sizes.</li>
+          <li>Number of network requests.</li>
+          <li>JavaScript execution time.</li>
+          <li>Largest Contentful Paint (LCP).</li>
+          <li>Interaction to Next Paint (INP).</li>
+          <li>Cumulative Layout Shift (CLS).</li>
+        </ul>
+
+        <p>
+          Revisit the
+          <a href="core-web-vitals.html">Core Web Vitals lesson</a>
+          to understand these three user-experience metrics.
+        </p>
+
+        <h2>11. Practical Task: Optimize Your SEO Portal</h2>
+        <p>Open your own SEO learning portal and follow these steps:</p>
+
+        <ol>
+          <li>Open the website in Chrome.</li>
+          <li>Press F12 to open Developer Tools.</li>
+          <li>Select the Network tab.</li>
+          <li>Reload the page and inspect the files being downloaded.</li>
+          <li>Identify large images, scripts, and stylesheets.</li>
+          <li>Check whether unnecessary resources are being loaded.</li>
+          <li>Make one improvement and test the page again.</li>
+        </ol>
+
+        <p>
+          Compare results under similar conditions. Network speed, browser
+          cache, device performance, and server location can affect your
+          measurements.
+        </p>
+
+        <h2>12. Quick Revision</h2>
+        <ul>
+          <li>Compress and resize images.</li>
+          <li>Remove unnecessary JavaScript and CSS.</li>
+          <li>Use caching for suitable resources.</li>
+          <li>Enable HTTP compression where appropriate.</li>
+          <li>Consider a CDN when it fits your website's needs.</li>
+          <li>Measure performance before and after changes.</li>
+          <li>Prioritize real user experience over chasing a perfect score.</li>
+        </ul>
+
+        <button id="complete-lesson" type="button">Mark as Completed</button>
+
+        <nav class="lesson-navigation" aria-label="Lesson navigation">
+          <a href="core-web-vitals.html">← Previous Lesson</a>
+          <a href="../index.html#lessons">All Lessons</a>
+          <a href="backlinks-link-building.html">Next Lesson →</a>
+        </nav>
+      </article>
+    </main>
+
+    <footer>
+      <p>Learn SEO. Practise SEO. Grow your skills.</p>
+    </footer>
+
+    <script src="../js/progress.js"></script>
+    <script>
+      const completeButton = document.getElementById("complete-lesson");
+      const lessonId = "website-speed-optimization";
+
+      if (isLessonCompleted(lessonId)) {
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      }
+
+      completeButton.addEventListener("click", function () {
+        markLessonCompleted(lessonId);
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      });
+    </script>
+  </body>
+</html>

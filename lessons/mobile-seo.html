@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn mobile SEO, mobile-first indexing, responsive design, mobile usability, and how to optimize websites for mobile users."
+    />
+    <title>Mobile SEO | SEO Zero to Hero</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">SEO Zero to Hero</a>
+      <nav aria-label="Main navigation">
+        <a href="../index.html#lessons">Lessons</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <article id="lesson-content">
+        <p>LESSON 16</p>
+        <h1>Mobile SEO</h1>
+
+        <p>
+          Bro, most people browse websites using smartphones. If your website
+          works perfectly on a laptop but looks broken on a mobile phone, users
+          may leave quickly. Mobile SEO helps you make your website accessible,
+          usable, and search-friendly on mobile devices.
+        </p>
+
+        <h2>1. What Is Mobile SEO?</h2>
+        <p>
+          Mobile SEO means optimizing a website so that mobile users can access
+          its content easily and search engines can understand and process it.
+        </p>
+
+        <p>
+          <strong>Simple definition:</strong> Mobile SEO is the process of
+          making your website work well on smartphones and other mobile devices.
+        </p>
+
+        <h2>2. Why Is Mobile SEO Important?</h2>
+        <ul>
+          <li>Many users search for information using smartphones.</li>
+          <li>A mobile-friendly layout improves the user experience.</li>
+          <li>Readable content helps users understand your pages.</li>
+          <li>Fast-loading pages reduce unnecessary waiting.</li>
+          <li>
+            Google primarily uses the mobile version of a website's content for
+            indexing.
+          </li>
+        </ul>
+
+        <h2>3. What Is Mobile-First Indexing?</h2>
+        <p>
+          Mobile-first indexing means Google primarily uses the mobile version
+          of a webpage's content for indexing and ranking.
+        </p>
+
+        <p>
+          Imagine your desktop website contains all your important content, but
+          your mobile version hides most of it. Google may not see the same
+          content you expect it to use.
+        </p>
+
+        <p>
+          <strong>Important:</strong> Mobile-first indexing does not mean Google
+          indexes only websites that are designed for mobile. It means Google
+          primarily uses the mobile version when evaluating a page.
+        </p>
+
+        <h2>4. Use the Viewport Meta Tag</h2>
+        <p>
+          The viewport meta tag tells the browser how to control a webpage's
+          dimensions and scaling on different devices.
+        </p>
+
+        <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</code></pre>
+
+        <p>
+          Add this tag inside the <code>&lt;head&gt;</code> section of your HTML
+          document. Without a proper viewport setting, a page may appear too
+          small or require unnecessary horizontal scrolling on mobile.
+        </p>
+
+        <h2>5. Use Responsive Web Design</h2>
+        <p>
+          Responsive design allows a website layout to adapt to different screen
+          sizes, including mobile phones, tablets, and desktop computers.
+        </p>
+
+        <p>Example CSS:</p>
+
+        <pre><code>/* Default layout for larger screens */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Adjust the layout for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}</code></pre>
+
+        <p>
+          In this example, the layout changes from three columns to one column
+          when the screen width is 768 pixels or less.
+        </p>
+
+        <h2>6. Make Text Easy to Read</h2>
+        <ul>
+          <li>Use a readable font size.</li>
+          <li>Keep paragraphs short and clear.</li>
+          <li>Use headings to organize content.</li>
+          <li>Avoid layouts that force users to scroll horizontally.</li>
+          <li>Make links and buttons easy to tap.</li>
+        </ul>
+
+        <h2>7. Optimize Images for Mobile</h2>
+        <p>
+          Large images can slow down a webpage, especially on mobile networks.
+          Use appropriately sized images and modern image formats where
+          suitable.
+        </p>
+
+        <ul>
+          <li>Resize images to fit their displayed dimensions.</li>
+          <li>Compress images without noticeably reducing quality.</li>
+          <li>Use descriptive alt text for meaningful images.</li>
+          <li>Prevent images from overflowing their containers.</li>
+        </ul>
+
+        <p>Example CSS:</p>
+
+        <pre><code>img {
+  max-width: 100%;
+  height: auto;
+}</code></pre>
+
+        <p>
+          For more details, continue to the
+          <a href="image-seo.html">Image SEO lesson</a>.
+        </p>
+
+        <h2>8. Mobile Page Speed</h2>
+        <p>
+          Users may have slower or less reliable mobile connections. Make your
+          pages efficient by reducing unnecessary JavaScript, optimizing images,
+          and avoiding resources that block rendering.
+        </p>
+
+        <p>
+          You will explore loading performance and user experience measurements
+          in the
+          <a href="core-web-vitals.html">Core Web Vitals lesson</a>.
+        </p>
+
+        <h2>9. Common Mobile SEO Mistakes</h2>
+        <ul>
+          <li>Forgetting the viewport meta tag.</li>
+          <li>Using fixed-width layouts that overflow small screens.</li>
+          <li>Hiding important content on mobile devices.</li>
+          <li>Using text that is too small to read comfortably.</li>
+          <li>Placing buttons and links too close together.</li>
+          <li>Using large, unoptimized images.</li>
+          <li>
+            Blocking important resources that search engines need to access.
+          </li>
+        </ul>
+
+        <h2>10. Mobile SEO Testing Checklist</h2>
+        <p>Before publishing a webpage, check the following:</p>
+
+        <ul>
+          <li>Does the page fit a mobile screen?</li>
+          <li>Can users read the text without zooming in?</li>
+          <li>Can users tap buttons and links comfortably?</li>
+          <li>Does the page load without unnecessary delays?</li>
+          <li>Can search engines access the important content?</li>
+          <li>Are images displayed correctly?</li>
+          <li>Is the mobile content consistent with the desktop content?</li>
+        </ul>
+
+        <h2>11. Practical Task</h2>
+        <p>
+          Bro, open your SEO learning portal in your desktop browser. Reduce the
+          browser width to simulate a mobile screen, or open the website on your
+          smartphone.
+        </p>
+
+        <ol>
+          <li>Check whether the navigation fits the screen.</li>
+          <li>Verify that lesson cards do not overflow horizontally.</li>
+          <li>Check whether the text is readable.</li>
+          <li>Test the lesson links and completion buttons.</li>
+          <li>
+            Open the browser's developer tools and use its device emulation
+            mode.
+          </li>
+        </ol>
+
+        <h2>12. Quick Revision</h2>
+        <ul>
+          <li>Mobile SEO improves the website experience on mobile devices.</li>
+          <li>
+            Google primarily uses the mobile version of content for indexing.
+          </li>
+          <li>The viewport meta tag helps browsers display pages correctly.</li>
+          <li>Responsive design adapts layouts to different screen sizes.</li>
+          <li>
+            Readable content, accessible controls, and optimized images matter.
+          </li>
+        </ul>
+
+        <button id="complete-lesson" type="button">Mark as Completed</button>
+
+        <nav class="lesson-navigation" aria-label="Lesson navigation">
+          <a href="canonical-tags.html">← Previous Lesson</a>
+          <a href="../index.html#lessons">All Lessons</a>
+          <a href="image-seo.html">Next Lesson →</a>
+        </nav>
+      </article>
+    </main>
+
+    <footer>
+      <p>Learn SEO. Practise SEO. Grow your skills.</p>
+    </footer>
+
+    <script src="../js/progress.js"></script>
+    <script>
+      const completeButton = document.getElementById("complete-lesson");
+      const lessonId = "mobile-seo";
+
+      if (isLessonCompleted(lessonId)) {
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      }
+
+      completeButton.addEventListener("click", function () {
+        markLessonCompleted(lessonId);
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      });
+    </script>
+  </body>
+</html>

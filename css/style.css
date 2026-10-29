@@ -1,0 +1,436 @@
+/* ==================================================
+   1. DESIGN VARIABLES
+   ================================================== */
+
+:root {
+    --color-background: #f5f7fb;
+    --color-surface: #ffffff;
+    --color-text: #1e293b;
+    --color-text-muted: #64748b;
+    --color-primary: #4f46e5;
+    --color-primary-hover: #3730a3;
+    --color-border: #e2e8f0;
+
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ==================================================
+   2. GLOBAL STYLES
+   ================================================== */
+
+/* Includes padding and borders in element dimensions. */
+* {
+    box-sizing: border-box;
+}
+
+/* Sets the default appearance of the website. */
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+   3. HEADER AND NAVIGATION
+   ================================================== */
+
+/* Aligns the website name and navigation horizontally. */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* Styles links inside the header. */
+header a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+/* Highlights header links on hover. */
+header a:hover {
+    color: var(--color-primary-hover);
+}
+
+/* Adds spacing between navigation links. */
+header nav {
+    display: flex;
+    gap: 24px;
+}
+
+
+/* ==================================================
+   4. HOMEPAGE HERO SECTION
+   ================================================== */
+
+/* Centers the main introduction. */
+#hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* Styles the main homepage heading. */
+#hero h1 {
+    margin-bottom: 16px;
+    font-size: 48px;
+    color: var(--color-text);
+}
+
+/* Styles the homepage introduction. */
+#hero p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: var(--color-text-muted);
+}
+
+
+/* ==================================================
+   5. HOMEPAGE LESSONS SECTION
+   ================================================== */
+
+/* Adds spacing around the main sections. */
+#lessons,
+#about {
+    padding: 40px 5%;
+}
+
+/* Arranges lesson cards in a responsive grid. */
+#lessons {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 260px), 350px)
+    );
+    gap: 24px;
+}
+
+/* Makes the section heading span the entire grid. */
+#lessons h2,
+#lessons > p {
+    grid-column: 1 / -1;
+}
+
+/* Styles section headings consistently. */
+#lessons h2,
+#about h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 28px;
+}
+
+/* Removes extra space above the lesson description. */
+#lessons > p {
+    margin-top: 0;
+}
+
+/* Styles section descriptions. */
+#lessons > p,
+#about p {
+    color: var(--color-text-muted);
+}
+
+
+/* ==================================================
+   6. LESSON CARDS AND BUTTONS
+   ================================================== */
+
+/* Creates a consistent layout for each lesson card. */
+.lesson-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 290px;
+    width: 100%;
+    max-width: 350px;
+    padding: 24px;
+    margin-top: 0;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Adds a subtle animation when hovering over a card. */
+.lesson-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Styles the lesson number label. */
+.lesson-number {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+/* Styles lesson titles. */
+.lesson-card h3 {
+    margin: 12px 0;
+    font-size: 22px;
+}
+
+/* Styles lesson descriptions. */
+.lesson-card p {
+    color: var(--color-text-muted);
+}
+
+/* Styles the Start Lesson link as a button. */
+.lesson-card a {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 10px 16px;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+/* Changes the button color on hover. */
+.lesson-card a:hover {
+    background-color: var(--color-primary-hover);
+}
+
+
+/* ==================================================
+   7. ABOUT SECTION
+   ================================================== */
+
+/* Keeps the About section easy to read. */
+#about p {
+    max-width: 700px;
+}
+
+
+/* ==================================================
+   8. LESSON CONTENT
+   ================================================== */
+
+/* Centers lesson content and limits its reading width. */
+#lesson-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+/* Styles the main lesson heading. */
+#lesson-content h1 {
+    margin-bottom: 16px;
+    font-size: 36px;
+}
+
+/* Styles lesson section headings. */
+#lesson-content h2 {
+    margin-top: 36px;
+    font-size: 26px;
+}
+
+/* Adds spacing between lesson paragraphs. */
+#lesson-content p {
+    margin-bottom: 16px;
+}
+
+/* Highlights the lesson number label. */
+#lesson-content > p:first-child {
+    color: var(--color-primary);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* ==================================================
+   9. LESSON NAVIGATION
+   ================================================== */
+
+/* Positions lesson navigation links at opposite ends. */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-border);
+}
+
+/* Styles lesson navigation links as buttons. */
+.lesson-navigation a {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+/* Changes navigation button color on hover. */
+.lesson-navigation a:hover {
+    background-color: var(--color-primary-hover);
+}
+
+
+/* ==================================================
+   10. FOOTER
+   ================================================== */
+
+/* Styles the shared website footer. */
+footer {
+    padding: 24px 20px;
+    text-align: center;
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+}
+
+/* Styles the footer message. */
+footer p {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   11. RESPONSIVE STYLES
+   ================================================== */
+
+/* Adjusts the layout for mobile devices. */
+@media (max-width: 600px) {
+    /* Reduces homepage introduction spacing. */
+    #hero {
+        padding: 50px 20px;
+    }
+
+    /* Reduces the main heading size. */
+    #hero h1 {
+        font-size: 34px;
+    }
+
+    /* Adjusts section spacing. */
+    #lessons,
+    #about {
+        padding: 30px 20px;
+    }
+
+    /* Reduces header spacing. */
+    header {
+        padding: 16px 20px;
+    }
+
+    /* Reduces navigation link spacing. */
+    header nav {
+        gap: 14px;
+    }
+
+    /* Adjusts lesson content spacing. */
+    #lesson-content {
+        padding: 30px 20px;
+    }
+
+    /* Reduces lesson heading sizes. */
+    #lesson-content h1 {
+        font-size: 30px;
+    }
+
+    #lesson-content h2 {
+        margin-top: 28px;
+        font-size: 23px;
+    }
+}
+
+/* Stacks lesson navigation buttons on narrow screens. */
+@media (max-width: 400px) {
+    .lesson-navigation {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .lesson-navigation a {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+/* Styles the learner's progress section. */
+#learning-progress {
+    margin: 0 5% 30px;
+    padding: 24px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+}
+
+/* Styles the progress section heading. */
+#learning-progress h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+/* Styles the completed lesson count. */
+#progress-text {
+    margin-bottom: 16px;
+    color: var(--color-text-muted);
+}
+
+/* Makes the progress bar fill the available width. */
+#progress-bar {
+    display: block;
+    width: 100%;
+    height: 12px;
+    accent-color: var(--color-primary);
+}
+
+/* Adjusts progress section spacing on mobile. */
+@media (max-width: 600px) {
+    #learning-progress {
+        margin: 0 20px 24px;
+        padding: 20px;
+    }
+}
+
+
+/* Styles the lesson completion button. */
+#complete-lesson {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 12px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Changes the button color on hover. */
+#complete-lesson:hover:not(:disabled) {
+    background-color: var(--color-primary-hover);
+}
+
+/* Shows a different appearance after lesson completion. */
+#complete-lesson:disabled {
+    background-color: #16a34a;
+    cursor: default;
+}

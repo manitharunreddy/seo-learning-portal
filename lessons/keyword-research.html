@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Learn SEO keyword research, understand search keywords, and discover how to choose relevant keywords for your website."
+    />
+
+    <title>Keyword Research for Beginners | SEO Zero to Hero</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- Shared website navigation. -->
+    <header>
+      <a href="../index.html">SEO Zero to Hero</a>
+
+      <nav aria-label="Main navigation">
+        <a href="../index.html#lessons">Lessons</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+    </header>
+
+    <!-- Main lesson content. -->
+    <main>
+      <article id="lesson-content">
+        <p>LESSON 05</p>
+
+        <h1>Introduction to Keyword Research</h1>
+
+        <p>
+          Keyword research is the process of discovering the words and phrases
+          people use when searching for information, products, or services
+          online.
+        </p>
+
+        <h2>1. What Is a Keyword?</h2>
+
+        <p>
+          A keyword can be a single word or a complete search phrase. It helps
+          us understand what information people are looking for.
+        </p>
+
+        <p><strong>Examples:</strong></p>
+
+        <ul>
+          <li>SEO</li>
+          <li>SEO tutorial for beginners</li>
+          <li>Petrol bunk management software</li>
+          <li>How to improve website ranking</li>
+        </ul>
+
+        <h2>2. Why Is Keyword Research Important?</h2>
+
+        <p>
+          Keyword research helps you understand your audience and create content
+          that addresses their needs.
+        </p>
+
+        <ul>
+          <li>Discover what your audience searches for.</li>
+          <li>Find relevant topics for your website.</li>
+          <li>Understand competition for search terms.</li>
+          <li>Plan useful website pages and articles.</li>
+        </ul>
+
+        <h2>3. Understand Search Volume</h2>
+
+        <p>
+          Search volume estimates how often people search for a particular
+          keyword during a specific period.
+        </p>
+
+        <p>
+          A keyword with high search volume may attract more potential visitors,
+          but it can also have stronger competition. Search volume estimates
+          vary between tools.
+        </p>
+
+        <h2>4. Understand Keyword Difficulty</h2>
+
+        <p>
+          Keyword difficulty is a metric used by SEO tools to estimate how
+          challenging it may be to rank for a keyword.
+        </p>
+
+        <p>
+          Different tools calculate this metric differently. It is useful for
+          research, but it does not guarantee whether a page will rank.
+        </p>
+
+        <h2>5. How to Find Keyword Ideas</h2>
+
+        <p>You can discover keyword ideas using these methods:</p>
+
+        <ul>
+          <li>Google Search autocomplete suggestions.</li>
+          <li>Related searches displayed by search engines.</li>
+          <li>Questions customers frequently ask.</li>
+          <li>Google Keyword Planner.</li>
+          <li>SEO keyword research tools.</li>
+        </ul>
+
+        <h2>6. Real-Time Example</h2>
+
+        <p>
+          Imagine you develop petrol bunk management software. Instead of
+          choosing keywords randomly, think about what your potential customers
+          might search for.
+        </p>
+
+        <ul>
+          <li>Petrol bunk billing software</li>
+          <li>Fuel station inventory management</li>
+          <li>Petrol pump accounting software</li>
+          <li>Fuel station sales reporting software</li>
+        </ul>
+
+        <p>
+          These are keyword ideas, not verified search-volume data. Research
+          them before deciding which pages to create.
+        </p>
+
+        <h2>7. How to Choose the Right Keywords</h2>
+
+        <p>Evaluate each keyword based on:</p>
+
+        <ul>
+          <li>
+            <strong>Relevance:</strong> Does it match your website or service?
+          </li>
+          <li><strong>Search intent:</strong> What does the searcher want?</li>
+          <li><strong>Competition:</strong> How competitive is the topic?</li>
+          <li>
+            <strong>Business value:</strong> Could the visitor become a
+            customer?
+          </li>
+        </ul>
+
+        <h2>Key Takeaway</h2>
+
+        <p>
+          Good keyword research starts with understanding your audience. Choose
+          relevant search terms and create genuinely useful content that
+          satisfies what people are looking for.
+        </p>
+
+        <!-- Marks this lesson as completed. -->
+        <button id="complete-lesson" type="button">Mark as Completed</button>
+
+        <!-- Navigation between course lessons. -->
+        <nav class="lesson-navigation" aria-label="Lesson navigation">
+          <a href="how-google-finds-websites.html"> &larr; Previous Lesson </a>
+
+          <a href="../index.html#lessons">All Lessons</a>
+
+          <a href="search-intent.html"> Next Lesson &rarr; </a>
+        </nav>
+      </article>
+    </main>
+
+    <!-- Shared website footer. -->
+    <footer>
+      <p>Learn SEO. Practise SEO. Grow your skills.</p>
+    </footer>
+
+    <!-- Loads lesson progress functions. -->
+    <script src="../js/progress.js"></script>
+
+    <script>
+      const completeButton = document.getElementById("complete-lesson");
+      const lessonId = "keyword-research";
+
+      // Restores the saved completion state.
+      if (isLessonCompleted(lessonId)) {
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      }
+
+      // Saves progress when the lesson is completed.
+      completeButton.addEventListener("click", function () {
+        markLessonCompleted(lessonId);
+
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      });
+    </script>
+  </body>
+</html>

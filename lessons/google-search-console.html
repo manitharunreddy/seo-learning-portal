@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn Google Search Console, including website verification, indexing, search performance, and SEO issue monitoring."
+    />
+    <title>Google Search Console | SEO Zero to Hero</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">SEO Zero to Hero</a>
+      <nav aria-label="Main navigation">
+        <a href="../index.html#lessons">Lessons</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <article id="lesson-content">
+        <p>LESSON 22</p>
+        <h1>Google Search Console</h1>
+
+        <p>
+          Google Search Console (GSC) is a free tool that helps website owners
+          understand how their websites appear in Google Search and identify
+          certain technical SEO issues.
+        </p>
+
+        <h2>1. What Is Google Search Console?</h2>
+
+        <p>
+          Google Search Console helps you monitor your website's search
+          performance, indexing status, and eligible search enhancements.
+        </p>
+
+        <p>
+          <strong>Simple definition:</strong> It helps you understand how Google
+          sees your website in search results.
+        </p>
+
+        <p>
+          <strong>Friend explanation:</strong> Bro, imagine you built a website.
+          You want to know whether Google has discovered your pages, how many
+          people see them in search, and whether any pages have indexing
+          problems. GSC helps you investigate these things.
+        </p>
+
+        <h2>2. Why Do We Need Google Search Console?</h2>
+
+        <ul>
+          <li>
+            Understand how users discover your website through Google Search.
+          </li>
+          <li>Check search impressions, clicks, and average position.</li>
+          <li>Inspect individual URLs and their indexing status.</li>
+          <li>Submit an XML sitemap for Google to discover URLs.</li>
+          <li>Identify certain indexing and crawling issues.</li>
+          <li>
+            Monitor eligible rich-result and Core Web Vitals reports when data
+            is available.
+          </li>
+        </ul>
+
+        <h2>3. Important Google Search Console Reports</h2>
+
+        <h3>Performance Report</h3>
+
+        <p>
+          This report helps you understand how your website performs in Google
+          Search.
+        </p>
+
+        <ul>
+          <li>
+            <strong>Total clicks:</strong> How many times users clicked your
+            website in Google Search.
+          </li>
+          <li>
+            <strong>Total impressions:</strong> How many times your website
+            appeared in search results.
+          </li>
+          <li>
+            <strong>Average CTR:</strong> The percentage of impressions that
+            resulted in clicks.
+          </li>
+          <li>
+            <strong>Average position:</strong> The average position of your
+            search result across the measured data.
+          </li>
+        </ul>
+
+        <h3>Example</h3>
+
+        <p>
+          Suppose your website appears in Google Search 1,000 times and receives
+          50 clicks.
+        </p>
+
+        <p><strong>CTR = (Clicks / Impressions) × 100</strong></p>
+
+        <p>CTR = (50 / 1,000) × 100 = <strong>5%</strong></p>
+
+        <p>This means 5% of the recorded impressions resulted in clicks.</p>
+
+        <h3>Indexing Report</h3>
+
+        <p>
+          The indexing report helps you understand which pages Google has
+          indexed and which pages have not been indexed.
+        </p>
+
+        <p>Possible reasons for pages not being indexed include:</p>
+
+        <ul>
+          <li>The page has a <code>noindex</code> directive.</li>
+          <li>The page is blocked from crawling by robots.txt.</li>
+          <li>The page redirects to another URL.</li>
+          <li>The page returns an error, such as HTTP 404.</li>
+          <li>Google has discovered the page but has not crawled it yet.</li>
+        </ul>
+
+        <p>
+          Important: A page not being indexed does not always mean something is
+          broken. Investigate the reason before making changes.
+        </p>
+
+        <h3>URL Inspection Tool</h3>
+
+        <p>
+          URL Inspection lets you examine a specific URL and see information
+          about Google's indexing of that page.
+        </p>
+
+        <p>
+          For example, if you publish a new page, you can inspect its URL to
+          investigate whether Google has indexed it.
+        </p>
+
+        <p>
+          You may also be able to request indexing, but this does not guarantee
+          that Google will index the page immediately or at all.
+        </p>
+
+        <h3>Sitemaps Report</h3>
+
+        <p>
+          This report lets you submit and monitor your XML sitemap. A sitemap
+          helps Google discover URLs, but submitting one does not guarantee
+          indexing.
+        </p>
+
+        <h3>Core Web Vitals Report</h3>
+
+        <p>
+          When sufficient field data is available, this report provides
+          information about real-user loading performance, responsiveness, and
+          visual stability.
+        </p>
+
+        <h2>4. How to Set Up Google Search Console</h2>
+
+        <ol>
+          <li>Open Google Search Console.</li>
+          <li>Add your website as a property.</li>
+          <li>Choose a Domain property or a URL-prefix property.</li>
+          <li>Verify that you own or control the website.</li>
+          <li>After verification, explore the available reports.</li>
+          <li>Submit your XML sitemap if you have one.</li>
+          <li>Inspect important URLs and investigate any relevant issues.</li>
+        </ol>
+
+        <p>
+          <strong>Domain property:</strong> Covers the domain's protocols and
+          subdomains. Verification generally requires a DNS record.
+        </p>
+
+        <p>
+          <strong>URL-prefix property:</strong> Covers URLs that begin with the
+          specified prefix and supports several verification methods.
+        </p>
+
+        <h2>5. Real-Time Example</h2>
+
+        <p>Imagine you own a website for a local bakery.</p>
+
+        <ol>
+          <li>You publish a page about birthday cakes.</li>
+          <li>You check the page using URL Inspection.</li>
+          <li>
+            You investigate any indexing issues shown by Google Search Console.
+          </li>
+          <li>
+            After the page starts appearing in search, you monitor its
+            impressions and clicks.
+          </li>
+          <li>You identify search queries that bring visitors to the page.</li>
+          <li>
+            You improve the page's content and title when the evidence suggests
+            an opportunity.
+          </li>
+        </ol>
+
+        <p>
+          This is how GSC helps you make SEO decisions based on actual search
+          data instead of guessing.
+        </p>
+
+        <h2>6. Google Search Console vs Google Analytics</h2>
+
+        <ul>
+          <li>
+            <strong>Google Search Console:</strong> Focuses on Google Search
+            visibility, search performance, and indexing information.
+          </li>
+          <li>
+            <strong>Google Analytics:</strong> Focuses on what users do after
+            they visit your website, such as engagement and conversions.
+          </li>
+        </ul>
+
+        <p>
+          Simple ga cheppalante, GSC helps you understand how users find your
+          website through Google Search. Analytics helps you understand what
+          users do after visiting your website.
+        </p>
+
+        <h2>7. Common Mistakes to Avoid</h2>
+
+        <ul>
+          <li>Assuming sitemap submission guarantees indexing.</li>
+          <li>
+            Requesting indexing repeatedly without investigating the issue.
+          </li>
+          <li>Confusing impressions with clicks.</li>
+          <li>Assuming every non-indexed page is a technical error.</li>
+          <li>Making major SEO changes based on a single day's data.</li>
+          <li>
+            Ignoring the search queries and pages that already perform well.
+          </li>
+        </ul>
+
+        <h2>8. Practice Task</h2>
+
+        <p>
+          For practice, imagine you manage a website and answer these questions:
+        </p>
+
+        <ol>
+          <li>What is Google Search Console?</li>
+          <li>What is the difference between clicks and impressions?</li>
+          <li>How do you calculate CTR?</li>
+          <li>What is the purpose of URL Inspection?</li>
+          <li>Does submitting a sitemap guarantee indexing?</li>
+          <li>
+            What is the difference between Google Search Console and Google
+            Analytics?
+          </li>
+        </ol>
+
+        <h2>Lesson Summary</h2>
+
+        <ul>
+          <li>
+            Google Search Console helps monitor Google Search performance and
+            indexing.
+          </li>
+          <li>
+            The Performance report shows clicks, impressions, CTR, and average
+            position.
+          </li>
+          <li>The URL Inspection tool helps investigate individual URLs.</li>
+          <li>
+            A sitemap helps Google discover URLs but does not guarantee
+            indexing.
+          </li>
+          <li>Use actual data to identify SEO improvements.</li>
+        </ul>
+
+        <button id="complete-lesson" type="button">Mark as Completed</button>
+
+        <nav class="lesson-navigation" aria-label="Lesson navigation">
+          <a href="local-seo.html">← Previous Lesson</a>
+          <a href="../index.html#lessons">All Lessons</a>
+          <a href="seo-analytics-reporting.html">Next Lesson →</a>
+        </nav>
+      </article>
+    </main>
+
+    <footer>
+      <p>Learn SEO. Practise SEO. Grow your skills.</p>
+    </footer>
+
+    <script src="../js/progress.js"></script>
+    <script>
+      const completeButton = document.getElementById("complete-lesson");
+      const lessonId = "google-search-console";
+
+      if (isLessonCompleted(lessonId)) {
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      }
+
+      completeButton.addEventListener("click", function () {
+        markLessonCompleted(lessonId);
+        completeButton.textContent = "Completed ✓";
+        completeButton.disabled = true;
+      });
+    </script>
+  </body>
+</html>
